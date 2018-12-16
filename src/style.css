@@ -1,0 +1,23 @@
+.blog-card {
+  display: flex;
+  justify-content: center;
+} 
+
+.card-link {
+	border: 1px solid blue;
+	border-radius: 2px;
+}
+
+img {
+	width: 15%;
+}
+
+footer, header {
+  padding: 20px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+body {
+  text-align: center;
+}
