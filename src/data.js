@@ -1,5 +1,6 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
+
 window.pokemon = {
  //Obtener Data principal de Pokemon
  getDataMainOfPokemon: function(arr){
@@ -10,3 +11,17 @@ window.pokemon = {
  	return newArr;
  },
 };
+
+
+// const example = () => {
+//   return 'example';
+// };
+//
+// window.example = example;
+
+// function mostrarData(){
+//   let arrPokemon= POKEMON.pokemon;
+//   for(let i=0; i<arrPokemon.length;i++){
+//     return arrPokemon[i].name;
+// }
+// }

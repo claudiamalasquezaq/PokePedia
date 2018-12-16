@@ -20,3 +20,5 @@ divPokemon.innerHTML += `
 }
 
 paintPokemones(dataMainPokemon);
+
+// document.getElementById("1").innerHTML= mostrarData();
