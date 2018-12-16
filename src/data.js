@@ -2,7 +2,7 @@
 // puedes ver como agregamos la función a nuestro objeto global window
 
 window.pokemon = {
- //Obtener Data principal de Pokemon
+ //Obtener data principal de Pokemon (Historia de usuario #01)
  getDataMainOfPokemon: function(arr){
  	const newArr = [];
  	arr.forEach(function(element){
