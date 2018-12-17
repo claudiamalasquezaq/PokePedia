@@ -72,15 +72,15 @@ _Prototipo de baja fidelidad_
 Es el prototipo hecho en lápiz y papel, las dos ideas de pantalla de inicio y la segunda página donde se muestra todo lo demás.
 
 #### PROTOTIPO 1
-(https://i.ibb.co/4MPck5q/Scan01.jpg)
+![Prototipo1](https://i.ibb.co/4MPck5q/Scan01.jpg)
 
 #### PROTOTIPO 2
-(https://i.ibb.co/CVLJ0QV/Scan.jpg)
+![Prototipo2](https://i.ibb.co/CVLJ0QV/Scan.jpg)
 
 _Prototipo de alta fidelidad_
 Es el prototipo hecho en figma, el primero que pondremos es el de la historia de usuario "Listar todos los Pokémon"
 
-(https://i.ibb.co/1sYBDyh/Scan02.jpg)
+![Prototipo3](https://i.ibb.co/1sYBDyh/Scan02.jpg)
 
 ### _Testeo con usuarios_
 
@@ -92,10 +92,12 @@ El feedback recibido por los usuarios al momento de mostrarles el prototipo de a
 
 Interfaz de Usuario de la HU01:
 
+
 Interfaz de Usuario de la HU02:
+
+
 Interfaz de Usuario de la HU03:
+
+
 Interfaz de Usuario de la HU04:
-
-
-
 
