@@ -1,3 +1,13 @@
+@font-face {
+	font-family: pokemon;
+	src: url(pokemonFont.ttf);
+}
+
+h1 {
+	font-family: pokemon;
+	color: #3B4CCA;
+}
+
 .blog-card {
   display: flex;
   justify-content: center;
@@ -19,10 +29,7 @@ footer, header {
 }
 
 body {
-  text-align: center;
-}
-
-body {
+	text-align: center;
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
@@ -35,31 +42,29 @@ body {
 #main-header {
 	height: 80px;
 }
-	#main-header h1 {
-		color: black;
-	}
 
 /*
  * Logo
  */
-#logo-header {
+.logo-header {
 	float: left;
 	padding: 25px;
 	text-decoration: none;
 }
-	#logo-header:hover {
-		color: #0b76a6;
-	}
+.logo-header {
+		color: #FFCB05;
+		text-shadow: 2px 2px 4px #0b76a6;
+}
 
-	#logo-header .site-name {
-		display: block;
-		font-weight: 700;
-		font-size: 1.2em;
-	}
+.logo-header .site-name {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
 
-	#logo-header .site-desc {
-		display: block;
-		font-weight: 300;
-		font-size: 0.8em;
-		color: #999;
-	}
+.logo-header .site-desc {
+	display: block;
+	font-weight: 300;
+	font-size: 0.8em;
+	color: #999;
+}
