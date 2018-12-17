@@ -12,7 +12,9 @@ const paintPokemones = (arr) => {
 const card= `
       <div class="card-link">
         <article class="blog-card">
+        <div>
           <img class="pokemon-image" src="${ pokemones.img }" />
+          </div>
           <div class="article-details">
             <h3 class="pokemon-name">${ pokemones.name }</h3>
             <p class="pokemon-type">Type: ${ pokemones.type }</p>
