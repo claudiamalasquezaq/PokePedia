@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Paprika|Patrick+Hand+SC');
+
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
@@ -61,12 +63,32 @@ color: black;
 .main {
 	padding-top: 10rem
 }
+
+.centrartexto {
+	text-align: center;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: 'Acme', sans-serif;
+}
+
+h2{
+	font-family: 'Paprika',cursive;
+}
+
+h4 {
+	font-family: Patrick Hand SC;
+	font-size: 28px;
+}
+
 .footer {
 	background: gray;
 	padding: 4rem 0;
 	text-align: center;
 	color: white;
 }
+
 
 @media only screen and (max-width: 700px){
 header .logo, .navegation {
@@ -89,3 +111,4 @@ header .logo, .navegation {
 	padding-top: 20rem
 }
 }
+
