@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>PokePedia</title>
     <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/280/280954.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-    <header class="header containercentrado">
-      <div class="logo-nav">
+    <header class="header">
+      <div class="container logo-nav-container">
           <h1 class="logo">PokePedia</h1>
           <nav class="navegation">
             <ul>
             <li><a href="#">Inicio</a></li>
            <li><a href="#"> ¿Qué es PokePedia? </a></li>
+           <li><a href="#"> Contacto </a></li>
           </ul>
           </nav>
       </div>
     </header>
 <main class="main"> 
-  <section class="containercentrado">
+  <div class="container">
     <h2>WELCOME TO THE POKEMON WORLD</h2>
     <!--lista de pokemones-->
     <div id="list-pokemon">
     </div>
-  </section>
+  </div>
   </main>
-    <footer> 
+    <footer class="footer">
+      <div class="container"> 
       <p>©Copyright 2018 by Lu & Clau. All rights reserved.</p>
+    </div>
     </footer>
        <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
