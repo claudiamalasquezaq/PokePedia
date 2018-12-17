@@ -92,6 +92,3 @@ El feedback recibido por los usuarios al momento de mostrarles el prototipo de a
 
 Interfaz de Usuario de la HU01:
 
-
-Interfaz de Usuario de la HU02:
-
