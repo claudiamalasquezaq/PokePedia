@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Paprika|Patrick+Hand+SC');
+@font-face {
+	font-family: pokemon;
+	src: url(fonts/logoFont.ttf);
+}
+
 * {
     margin:0;
     padding: 0;
@@ -29,18 +35,17 @@ header .contenedor {
     display: table;
 }
 
-
-@font-face {
+.logo {
 	font-family: pokemon;
-	src: url(fonts/logoFont.ttf);
 }
+
 
 /* .logo-img {
 	width: 100px;
 	height: 100px;
 } */
 
-@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Paprika|Patrick+Hand+SC');
+
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
@@ -62,11 +67,6 @@ body {
 
 .centrartexto {
 	text-align: center;
-}
-
-h1 {
-	font-size: 35px;
-	font-family: 'Acme', sans-serif;
 }
 
 h2{
