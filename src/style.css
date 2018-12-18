@@ -12,7 +12,7 @@
 
 header {
     width: 100%;
-    height: 50px;
+    height: 70px;
     background: #FFDE00;
 	color: #f2f2f2;
 /*ocupe todo*/
@@ -36,16 +36,15 @@ header .contenedor {
 }
 
 .logo {
+	padding-top: 16px;
 	font-family: pokemon;
 }
 
-
-/* .logo-img {
-	width: 100px;
-	height: 100px;
-} */
-
-
+.logo-img {
+	width: 70px;
+	height: 70px;
+	float: left;
+} 
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
