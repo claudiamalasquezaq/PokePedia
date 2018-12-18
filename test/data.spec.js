@@ -7,6 +7,12 @@ describe('pokemon', () => {
   });
 });
 
+describe('pokemon.getDataMainOfPokemon', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.getDataMainOfPokemon).toBe('function');
+  });
+});
+
 // describe('getDataMainOfPokemon', () => {
 //   it('debería retornar una función', () => {
 //     expect(typeof getDataMainOfPokemon).toEqual('function');
