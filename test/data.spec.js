@@ -2,11 +2,18 @@ require('../src/data.js');
 
 
 describe('pokemon', () => {
-  it('debería ser un objeto', () => {
+  it('debería retornar un objeto', () => {
     expect(typeof pokemon).toBe('object');
   });
-
-  // it('returns `example`', () => {
-  //   expect(example()).toBe('example');
-  // });
 });
+
+// describe('getDataMainOfPokemon', () => {
+//   it('debería retornar una función', () => {
+//     expect(typeof getDataMainOfPokemon).toEqual('function');
+//   });
+// });
+
+
+// it('returns `example`', () => {
+// expect(example()).toBe('example');
+// });
