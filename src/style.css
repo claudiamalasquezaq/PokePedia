@@ -25,34 +25,22 @@ body {
 }
 
 header {
-	width: 100%;
-	height: 50px;
-	background: #FFDE00;
-	color: #f2f2f2;
-	padding: 1rem 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+   background: #FFDE00;
+    color: #fff;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .contenedor {
-	width: 98%;
-	margin: auto;
+    width: 98%;
+    margin: auto;
 }
-
-h1 {
-	float: left;
-}
-
-header .contenedor {
-	display: table;
-}
-
-
-
-
-
 
 
 
@@ -136,10 +124,6 @@ color: black;
 	text-align: center;
 }
 
-h1 {
-	font-size: 35px;
-	font-family: 'Acme', sans-serif;
-}
 
 h2{
 	font-family: 'Paprika',cursive;
