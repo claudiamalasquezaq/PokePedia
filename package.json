@@ -15,5 +15,19 @@
     "htmlhint": "^0.10.1",
     "jest": "^23.6.0",
     "mocha": "^5.2.0"
-  }
+  },
+  "description": "1. _La data escogida_ fue la de Pokemón ya que es una data amigable, la cual tiene un amplio público haciendolo así popular y con un mayor campo por explorar.\r 2. _El usuario_ ; se analizó y se priorizo resolver las problemáticas para las personas que eran fanáticos de la serie, ya que así no se tendría un sector reducido(usuarios de PokemonGo).\r 3. _Las expectavivas_ ; se esperaba poder tener un amplio público además de accesible para poder definir el producto a desarrollar, nos basamos en las **entrevistas** a público con conocomiento previo a la serie Pokemón(fanáticos en su mayoría), con los cuales se pudo sacar varias problemáticas existentes con respecto a esta.",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MirellaLucero/lim-2018-11-bc-core-am-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MirellaLucero/lim-2018-11-bc-core-am-data-lovers/issues"
+  },
+  "homepage": "https://github.com/MirellaLucero/lim-2018-11-bc-core-am-data-lovers#readme"
 }

@@ -1,4 +1,4 @@
-.blog-card {
+ .blog-card {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -14,19 +14,19 @@
   display: inline-block;
 }
 
-  .card-link:hover .pokemon-name {
+.card-link:hover .pokemon-name {
     transition: color 0.3s ease;
-    color: orange   ;
+    color: orange ;
   }
 
-  .card-link:hover .pokemon-image {
+.card-link:hover .pokemon-image {
     transition: opacity 0.3s ease;
     opacity: 0.9;
   }
 
-.article-details {
+  .article-details {
   padding: 1.5rem;
-}
+ }
   
   .pokemon-type {
     display: inline-block;

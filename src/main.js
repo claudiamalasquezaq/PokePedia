@@ -1,18 +1,18 @@
-//almacenando en dataMainPokemon la data a utilizar en la HU01
-const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon)
-//dando id a la const donde se pintaran los pokemones
+// almacenando en dataMainPokemon la data a utilizar en la HU01
+const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon);
+// dando id a la const donde se pintaran los pokemones
 const divPokemon = document.getElementById('list-pokemon');
 
-//pintando pokemones en HTML(Historia de usuario #01)
+// pintando pokemones en HTML(Historia de usuario #01)
 const paintPokemones = (arr) => {
-  let listOfPokemones = "";
-  //recorrer el dataMain con forEach
-  arr.forEach((pokemones)=> {
-//almacenando en una const lo que se implementará al HTML
-const card= `
-      <div class="card-link">
-        <article class="blog-card">
-          <div class="center-items">
+  let listofPokemons = '';
+  // recorrereldataMainconforEach
+  arr.forEach((pokemones) => {
+  // almacenandoenunaconstloqueseimplementaráalHTML
+    const card = `
+         <div class="card-link">
+           <article class="blog-card">
+            <div class="center-items">
             <img class="pokemon-image" src="${ pokemones.img }" />
           </div>
           <div class="article-details">
@@ -25,12 +25,12 @@ const card= `
         </article>
       </div>
     `;
-    //concatenando info
-  listOfPokemones+=card;
-})
-    //pintando en el html
-    divPokemon.innerHTML =  listOfPokemones;
-}
+    // concatenando info
+    listofPokemons += card;
+  });
+  // pintando en el html
+  divPokemon.innerHTML = listofPokemons;
+};
 
 paintPokemones(dataMainPokemon);
 
