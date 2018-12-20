@@ -1,5 +1,6 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
+
 // Obtener data principal de Pokemon (Historia de usuario #01)
 const getDataMainOfPokemon = (arr) => {
   let newArr = [];
@@ -9,19 +10,13 @@ const getDataMainOfPokemon = (arr) => {
   return newArr;
 };
 
-const searchByName = (arr, namePokemon) => {
-  let newArr = {};
-  arr.forEach(function(element) {
-    if (element.name === namePokemon) {
-      newArr = [{name: element.name, img: element.img, type: element.type, height: element.height, weight: element.weight, weaknesses: element.weaknesses}];
-    }
-  });
-  return newArr;
+// Obtener pokemón por nombre (Historia de usuario #02) 
+const searchByName = (arr,name) => {
+  const getPokemon = arr.filter(obj => obj.name.toUpperCase() === name.toUpperCase());
+  return getPokemon;
 };
-
-const calculateQuantityByType = () => {
-
-};
+ 
+const calculateQuantityByType = () => {};
 const getTypes = () => {};
 const uniqueTypes = () => {};
 // const getTypes = (data) => {

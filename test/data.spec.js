@@ -76,7 +76,7 @@ describe('pokemon.getDataMainOfPokemon', () => {
   });
 });
 
-describe('pokemon.getTypes', () => {
+describe('pokemon.getTypes',() => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.getTypes).toBe('function');
   });
@@ -91,6 +91,16 @@ describe('pokemon.filterForType', () => {
   //   expect(pokemon.filterForType(inputFilter, 'Fire').toEqual(outputFilter));
   // });
 });
+// describe('getDataMainOfPokemon', () => {
+//   it('debería retornar una función', () => {
+//     expect(typeof getDataMainOfPokemon).toEqual('function');
+//   });
+// });
+
+
+// it('returns `example`', () => {
+// expect(example()).toBe('example');
+// });
 
 const outputCalculate = '';
 
@@ -99,7 +109,7 @@ describe('searchByName', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.searchByName).toBe('function');
   });
-  it('debería retornar el objeto con las siguientes propiedades(name,img,type,heigth,weight,weakness) al ingresar el nombre del Pokémon', () => {
+  it('debería retornar el array del pokemon requerido', () => {
     expect(pokemon.searchByName(input, inputSearch)).toEqual(outputSearch);
   });
 });
