@@ -79,12 +79,6 @@ describe('pokemon.getDataMainOfPokemon', () => {
   });
 });
 
-describe('pokemon.searchByName', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.searchByName).toBe('function');
-  });
-});
-
 describe('pokemon.getTypes',() => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.getTypes).toBe('function');
@@ -118,7 +112,7 @@ describe('searchByName', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.searchByName).toBe('function');
   });
-  it('debería retornar el objeto con las siguientes propiedades(name,img,type,heigth,weight,weakness) al ingresar el nombre del Pokémon', () => {
+  it('debería retornar el array del pokemon requerido', () => {
     expect(pokemon.searchByName(input, inputSearch)).toEqual(outputSearch);
   });
 });
