@@ -28,7 +28,8 @@ header {
 }
 
 h1 {
-    float: left;
+	float: left;
+	color: #3B4CCA;
 }
 
 header .contenedor {
@@ -40,16 +41,15 @@ header .contenedor {
 	font-family: pokemon;
 }
 
-.logo-img {
-	width: 70px;
-	height: 70px;
-	float: left;
-} 
-
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
-	background: #f2f2f2;
+	/* background: #f2f2f2; */
+	background: url('http://www.hdfondos.eu/pictures/2012/0221/1/pokemon-fields-ruby-1920x1200-wallpaper-507673.jpg') no-repeat center center fixed;
+	   -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	   -o-background-size: cover;
+	   background-size: cover;;
 	margin: 0;
 	padding: 0;
 }

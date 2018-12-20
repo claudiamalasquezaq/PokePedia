@@ -43,10 +43,7 @@ const inputGet = [{
 // Output para la HU #02 : Devuelve solo las propiedades que se necesitan (name, img, type, height, weight, weaknesses)
 const outputGet = [{'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}];
 
-
-
 // const outputFilter = [{'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'], 'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}];
-
 
 // Input para las demás historias de usuario
 const input = [
