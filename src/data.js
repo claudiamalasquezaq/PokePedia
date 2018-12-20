@@ -11,7 +11,7 @@ const getDataMainOfPokemon = (arr) => {
 };
 
 // Obtener pokemón por nombre (Historia de usuario #02) 
-const searchByName = (arr,name) => {
+const searchByName = (arr, name) => {
   const getPokemon = arr.filter(obj => obj.name.toUpperCase() === name.toUpperCase());
   return getPokemon;
 };
