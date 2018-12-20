@@ -9,6 +9,19 @@ const getDataMainOfPokemon = (arr) => {
   return newArr;
 };
 
+const searchByName = (arr, namePokemon) => {
+  let newArr = {};
+  arr.forEach(function(element) {
+    if (element.name === namePokemon) {
+      newArr = [{name: element.name, img: element.img, type: element.type, height: element.height, weight: element.weight, weaknesses: element.weaknesses}];
+    }
+  });
+  return newArr;
+};
+
+const calculateQuantityByType = () => {
+
+};
 const getTypes = () => {};
 const uniqueTypes = () => {};
 // const getTypes = (data) => {
@@ -43,7 +56,10 @@ const uniqueTypes = () => {};
 const filterForType = () => {};
 
 window.pokemon = {
+  // Obtener data principal de Pokemon (Historia de usuario #01)
   getDataMainOfPokemon,
+  searchByName,
+  calculateQuantityByType,
   getTypes,
   uniqueTypes,
   filterForType,
