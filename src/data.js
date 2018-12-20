@@ -17,17 +17,21 @@ const searchByName = (arr, name) => {
 };
  
 const calculateQuantityByType = () => {};
-const getTypes = () => {};
 const uniqueTypes = () => {};
-// const getTypes = (data) => {
-//   let onlyType = [];
-//   const getDataType = data.filter(obj => obj.type);
-//   for ( let i = 0; i < getDataType.length; i++) {
-//     if(condicional para no repetir)
-//   }
-//   onlyType.push(getDataType);
-//   return onlyType;
-// };
+
+const getTypes = (data) =>{
+  let arrTypes = [];
+  data.forEach(obj => {
+    arrTypes = arrTypes.concat(obj.type);
+  });
+  const uniqueType = arrTypes.reduce((acum, ele) => {
+    if (ele.type !== '' && acum.indexOf(ele.type) === -1) {
+      acum.push(ele.type);
+    }
+    return acum;
+  }, []);
+  return uniqueType;
+};
 
 
 // const uniqueTypes = (data) => {

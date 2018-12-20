@@ -80,6 +80,8 @@ describe('pokemon.getTypes',() => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.getTypes).toBe('function');
   });
+
+  it('debería retornar un array de todos los tipos de Pokemon', () => {});  
 });
 
 describe('pokemon.filterForType', () => {

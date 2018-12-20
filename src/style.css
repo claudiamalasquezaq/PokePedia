@@ -12,8 +12,8 @@
 
 header {
 	width: 100%;
-    height: 70px;
-    background: #FFDE00;
+	height: 70px;	
+    background: #e46c7c;
 	color: #f2f2f2;
 /*ocupe todo*/
     position: fixed;
@@ -29,7 +29,7 @@ header {
 
 h1 {
 	float: left;
-	color: #3B4CCA;
+	color: #fff;
 }
 
 header .contenedor {
