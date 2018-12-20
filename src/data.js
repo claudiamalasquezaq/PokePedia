@@ -22,10 +22,47 @@ const searchByName = (arr, namePokemon) => {
 const calculateQuantityByType = () => {
 
 };
+const getTypes = () => {};
+const uniqueTypes = () => {};
+// const getTypes = (data) => {
+//   let onlyType = [];
+//   const getDataType = data.filter(obj => obj.type);
+//   for ( let i = 0; i < getDataType.length; i++) {
+//     if(condicional para no repetir)
+//   }
+//   onlyType.push(getDataType);
+//   return onlyType;
+// };
+
+
+// const uniqueTypes = (data) => {
+//   const acumType = data.reduce((acum, ele) => {
+//     if (ele.type !== '' && acum.indexOf(ele.type) === -1) {
+//       acum.push(ele.type);
+//     }
+//     return acum;
+//   }, []);
+//   return acumType;
+// };
+
+// const getTypes = (data) => {
+//   let onlyType = [];
+//   data.forEach(function(element) {
+//     onlyType.push({type: element.type});
+//   });
+//   return onlyType;
+// };
+
+const filterForType = () => {};
 
 window.pokemon = {
   // Obtener data principal de Pokemon (Historia de usuario #01)
   getDataMainOfPokemon,
   searchByName,
   calculateQuantityByType,
+  getTypes,
+  uniqueTypes,
+  filterForType,
 };
+ 
+ 

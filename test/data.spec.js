@@ -45,7 +45,7 @@ const outputGet = [{'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemong
 
 
 
-const outputFilter = [{'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'], 'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}];
+// const outputFilter = [{'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'], 'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}];
 
 
 // Input para las demás historias de usuario
@@ -114,31 +114,5 @@ describe('calculateQuantityByType', () => {
   });
   it('debería retornar la cantidad que se repite un tipo', () => {
     expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
-  });
-});
-
-describe('pokemon.getDataMainOfPokemon', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.getDataMainOfPokemon).toBe('function');
-  });
-
-  it('debería retornar un nuevo array, con los datos principales de los pokemones', () => {
-    expect(pokemon.getDataMainOfPokemon(inputGet)).toEqual(outputGet);
-  });
-});
-
-describe('pokemon.getTypes',() => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.getTypes).toBe('function');
-  });
-});
-
-describe('pokemon.filterForType', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.filterForType).toBe('function');
-  });
-
-  it('debería retornar el objeto del Pokemon de tipo Fire', () => {
-    expect(pokemon.filterForType(inputFilter, 'Fire').toEqual(outputFilter));
   });
 });
