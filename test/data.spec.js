@@ -64,6 +64,12 @@ describe('pokemon.getDataMainOfPokemon', () => {
   });
 });
 
+describe('pokemon.searchByName', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.searchByName).toBe('function');
+  });
+});
+
 describe('pokemon.getTypes',() => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.getTypes).toBe('function');
@@ -79,9 +85,6 @@ describe('pokemon.filterForType', () => {
     expect(pokemon.filterForType(inputFilter, 'Fire').toEqual(outputFilter));
   });
 });
-
-
-
 // describe('getDataMainOfPokemon', () => {
 //   it('debería retornar una función', () => {
 //     expect(typeof getDataMainOfPokemon).toEqual('function');
