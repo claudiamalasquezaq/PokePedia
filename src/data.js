@@ -29,5 +29,3 @@ window.pokemon = {
   searchByName,
   calculateQuantityByType,
 };
- 
- 

@@ -3,6 +3,22 @@ const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon);
 // Dando id a la const donde se pintaran los pokemones
 const divPokemon = document.getElementById('list-pokemon');
 
+// const pokemonName = document.getElementById('pokemon-name').value;
+const btnSearch = document.getElementById('btn-search');
+
+
+btnSearch.addEventListener('click', () => {
+  const pokemonName = document.getElementById('pokemon-name').value;
+  if (pokemonName === '') {
+    document.getElementById('warning').innerHTML = 'Ingrese el nombre del pokémon que desea buscar';
+  } else {
+    const buscado = pokemon.searchByName(dataMainPokemon, pokemonName);
+    document.getElementById('warning').innerHTML = '';
+    paintPokemones(buscado);
+  }
+});
+
+
 // Pintando pokemones en HTML(Historia de usuario #01)
 const paintPokemones = (arr) => {
   let listOfPokemones = '';
