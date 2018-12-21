@@ -19,18 +19,11 @@ const searchByName = (arr, name) => {
 const calculateQuantityByType = () => {};
 const uniqueTypes = () => {};
 
-const getTypes = (data) =>{
+const getTypes = (data) => {
   let arrTypes = [];
   data.forEach(obj => {
     arrTypes = arrTypes.concat(obj.type);
   });
-  const uniqueType = arrTypes.reduce((acum, ele) => {
-    if (ele.type !== '' && acum.indexOf(ele.type) === -1) {
-      acum.push(ele.type);
-    }
-    return acum;
-  }, []);
-  return uniqueType;
 };
 
 
