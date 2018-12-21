@@ -7,37 +7,11 @@ describe('pokemon', () => {
 });
 
 // Input para la HU #01: Ingresa todas las propiedades de la data.
-const inputGet = [{
-  'id': 1,
-  'num': '001',
-  'name': 'Bulbasaur',
-  'img': 'http://www.serebii.net/pokemongo/pokemon/001.png',
-  'type': [
-    'Grass',
-    'Poison'
-  ],
-  'height': '0.71 m',
-  'weight': '6.9 kg',
-  'candy': 'Bulbasaur Candy',
-  'candy_count': 25,
-  'egg': '2 km',
-  'spawn_chance': 0.69,
-  'avg_spawns': 69,
-  'spawn_time': '20:00',
-  'multipliers': [1.58],
-  'weaknesses': [
-    'Fire',
-    'Ice',
-    'Flying',
-    'Psychic'
-  ],
-  'next_evolution': [{
-    'num': '002',
-    'name': 'Ivysaur'
-  }, {
-    'num': '003',
-    'name': 'Venusaur'
-  }]
+const inputGet = [{'id': 1, 'num': '001', 'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png',
+  'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'candy': 'Bulbasaur Candy', 'candy_count': 25,
+  'egg': '2 km', 'spawn_chance': 0.69, 'avg_spawns': 69, 'spawn_time': '20:00', 'multipliers': [1.58],
+  'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic'],
+  'next_evolution': [{'num': '002', 'name': 'Ivysaur'}, {'num': '003', 'name': 'Venusaur'}]
 }];
 
 // Output para la HU #02 : Devuelve solo las propiedades que se necesitan (name, img, type, height, weight, weaknesses)
@@ -54,7 +28,7 @@ const input = [
   {'name': 'Venusaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/003.png', 'type': ['Grass', 'Poison'],
     'height': '2.01 m', 'weight': '100.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
   {'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'],
-    'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}
+    'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']},
 ];
 
 // Input para la HU #02 : Ingresar un nombre de Pokémon
@@ -76,12 +50,14 @@ describe('pokemon.getDataMainOfPokemon', () => {
   });
 });
 
-describe('pokemon.getTypes',() => {
+describe('pokemon.getTypes', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.getTypes).toBe('function');
   });
 
-  it('debería retornar un array de todos los tipos de Pokemon', () => {});  
+  it('debería retornar un array de todos los tipos de Pokemon', () => {
+    // expect(pokemon.getTypes(input).toEqual(outputTypes));
+  });  
 });
 
 describe('pokemon.filterForType', () => {

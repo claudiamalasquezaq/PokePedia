@@ -15,22 +15,27 @@ const searchByName = (arr, name) => {
   const getPokemon = arr.filter(obj => obj.name.toUpperCase() === name.toUpperCase());
   return getPokemon;
 };
- 
-const calculateQuantityByType = () => {};
-const uniqueTypes = () => {};
+  
 
-const getTypes = (data) =>{
+const calculateQuantityByType = () => {};
+
+// Obtener un arreglo con todos los tipos de Pokémon
+const getTypes = (data) => {
   let arrTypes = [];
   data.forEach(obj => {
     arrTypes = arrTypes.concat(obj.type);
   });
-  const uniqueType = arrTypes.reduce((acum, ele) => {
-    if (ele.type !== '' && acum.indexOf(ele.type) === -1) {
-      acum.push(ele.type);
+  return arrTypes;
+};
+
+const uniqueTypes = (data) => {
+  const acumType = getTypes(data).reduce((acum, elem) => {
+    if (elem !== '' && acum.indexOf(elem) === -1) {
+      acum.push(elem);
     }
     return acum;
   }, []);
-  return uniqueType;
+  return acumType;
 };
 
 
@@ -42,14 +47,6 @@ const getTypes = (data) =>{
 //     return acum;
 //   }, []);
 //   return acumType;
-// };
-
-// const getTypes = (data) => {
-//   let onlyType = [];
-//   data.forEach(function(element) {
-//     onlyType.push({type: element.type});
-//   });
-//   return onlyType;
 // };
 
 const filterForType = () => {};
