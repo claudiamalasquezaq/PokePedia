@@ -38,17 +38,6 @@ const uniqueTypes = (data) => {
   return acumType;
 };
 
-
-// const uniqueTypes = (data) => {
-//   const acumType = data.reduce((acum, ele) => {
-//     if (ele.type !== '' && acum.indexOf(ele.type) === -1) {
-//       acum.push(ele.type);
-//     }
-//     return acum;
-//   }, []);
-//   return acumType;
-// };
-
 const filterForType = () => {};
 
 window.pokemon = {
