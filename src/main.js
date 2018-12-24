@@ -3,9 +3,11 @@ const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon);
 // Dando id a la const donde se pintaran los pokemones
 const divPokemon = document.getElementById('list-pokemon');
 
+const selectTypes = document.getElementById('paint-types');
+
 // const pokemonName = document.getElementById('pokemon-name').value;
 const btnSearch = document.getElementById('btn-search');
-
+const btnSearchAdv = document.getElementById('btn-search-adv');
 
 btnSearch.addEventListener('click', () => {
   const pokemonName = document.getElementById('pokemon-name').value;
@@ -18,6 +20,11 @@ btnSearch.addEventListener('click', () => {
   }
 });
 
+btnSearchAdv.addEventListener('click', () => {
+  const types = document.getElementById('types');
+  types.classList.remove('unseen');
+  types.classList.remove('show');
+});
 
 // Pintando pokemones en HTML(Historia de usuario #01)
 const paintPokemones = (arr) => {
@@ -50,4 +57,14 @@ const paintPokemones = (arr) => {
 
 paintPokemones(dataMainPokemon);
 
-// document.getElementById("1").innerHTML= mostrarData();
+const paintTypesInSelect = (arr) => {
+  let typesOfPokemon = '';
+  const types = pokemon.uniqueTypes(arr);
+  for (let i = 0; i < types.length; i++) {
+    const select = `<option value="${types[i]}">${types[i]}</option>`;
+    typesOfPokemon += select;
+  }
+  selectTypes.innerHTML = typesOfPokemon;
+};
+
+paintTypesInSelect(dataMainPokemon);
