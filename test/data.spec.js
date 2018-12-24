@@ -1,5 +1,6 @@
 require('../src/data.js');
 
+// Comprobar que pokemon es un objeto
 describe('pokemon', () => {
   it('debería retornar un objeto', () => {
     expect(typeof pokemon).toBe('object');
@@ -14,10 +15,8 @@ const inputGet = [{'id': 1, 'num': '001', 'name': 'Bulbasaur', 'img': 'http://ww
   'next_evolution': [{'num': '002', 'name': 'Ivysaur'}, {'num': '003', 'name': 'Venusaur'}]
 }];
 
-// Output para la HU #02 : Devuelve solo las propiedades que se necesitan (name, img, type, height, weight, weaknesses)
+// Output para la HU #01 : Devuelve solo las propiedades que se necesitan (name, img, type, height, weight, weaknesses)
 const outputGet = [{'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}];
-
-// const outputFilter = [{'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'], 'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}];
 
 // Input para las demás historias de usuario
 const input = [
@@ -46,9 +45,14 @@ const outputSearch = [
     'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}
 ];
 
-// Output para la HU : Agrupar por tipo
+// Output para la HU #03 : Crear un array con todos los tipos de Pokémon
 const outputTypes = ['Grass', 'Poison', 'Grass', 'Poison', 'Grass', 'Poison', 'Fire', 'Water', 'Bug', 'Flying', 'Electric'];
+// Output para la HU #03 : Obtener los tipos únicos
+const outputUniqueTypes = ['Grass', 'Poison', 'Fire', 'Water', 'Bug', 'Flying', 'Electric'];
 
+// const outputFilter = [{'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'], 'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}];
+
+// Test para la 1era historia de usuario: Mostrar solo ciertas propiedades de la data
 describe('pokemon.getDataMainOfPokemon', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.getDataMainOfPokemon).toBe('function');
@@ -59,39 +63,7 @@ describe('pokemon.getDataMainOfPokemon', () => {
   });
 });
 
-describe('pokemon.getTypes', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.getTypes).toBe('function');
-  });
-
-  it('debería retornar un array de todos los tipos de Pokemon', () => {
-    expect(pokemon.getTypes(input)).toEqual(outputTypes);
-  });  
-});
-
-describe('pokemon.filterForType', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.filterForType).toBe('function');
-  });
-
-  // it('debería retornar el objeto del Pokemon de tipo Fire', () => {
-  //   expect(pokemon.filterForType(inputFilter, 'Fire').toEqual(outputFilter));
-  // });
-});
-// describe('getDataMainOfPokemon', () => {
-//   it('debería retornar una función', () => {
-//     expect(typeof getDataMainOfPokemon).toEqual('function');
-//   });
-// });
-
-
-// it('returns `example`', () => {
-// expect(example()).toBe('example');
-// });
-
-const outputCalculate = '';
-
-// Test para la 3era historia de usuario: Búsqueda por nombre
+// Test para la 2da historia de usuario: Búsqueda por nombre
 describe('searchByName', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.searchByName).toBe('function');
@@ -101,12 +73,34 @@ describe('searchByName', () => {
   });
 });
 
-// Test para la 4ta historia de usuario: Cálculo de veces que se repiten los tipos de Pokémon
-describe('calculateQuantityByType', () => {
+// Test para la 3ra historia de usuario: Filtrar por tipo
+// Test para la función que obtiene todos los tipos(incluye repeticiones)
+describe('pokemon.getTypes', () => {
   it('debería retornar una función', () => {
-    expect(typeof pokemon.calculateQuantityByType).toBe('function');
+    expect(typeof pokemon.getTypes).toBe('function');
   });
-  it('debería retornar la cantidad que se repite un tipo', () => {
-    expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
+
+  it('debería retornar un array de todos los tipos de Pokemon', () => {
+    expect(pokemon.getTypes(input)).toEqual(outputTypes);
+  });  
+});
+// Test para la función que obtiene los tipos únicos
+describe('pokemon.uniqueTypes', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.uniqueTypes).toBe('function');
+  });
+
+  it('debería retornar los tipos únicos', () => {
+    expect(pokemon.uniqueTypes(input)).toEqual(outputUniqueTypes);
   });
 });
+
+// Test para la 4ta historia de usuario: Cálculo de veces que se repiten los tipos de Pokémon
+// describe('calculateQuantityByType', () => {
+//   it('debería retornar una función', () => {
+//     expect(typeof pokemon.calculateQuantityByType).toBe('function');
+//   });
+//   it('debería retornar la cantidad que se repite un tipo', () => {
+//     expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
+//   });
+// });
