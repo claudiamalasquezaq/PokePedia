@@ -1,18 +1,41 @@
-// almacenando en dataMainPokemon la data a utilizar en la HU01
+// Almacenando en dataMainPokemon la data a utilizar en la HU01
 const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon);
-// dando id a la const donde se pintaran los pokemones
+// Dando id a la const donde se pintaran los pokemones
 const divPokemon = document.getElementById('list-pokemon');
 
-// pintando pokemones en HTML(Historia de usuario #01)
+const selectTypes = document.getElementById('paint-types');
+
+// const pokemonName = document.getElementById('pokemon-name').value;
+const btnSearch = document.getElementById('btn-search');
+const btnSearchAdv = document.getElementById('btn-search-adv');
+
+btnSearch.addEventListener('click', () => {
+  const pokemonName = document.getElementById('pokemon-name').value;
+  if (pokemonName === '') {
+    document.getElementById('warning').innerHTML = 'Ingrese el nombre del pokémon que desea buscar';
+  } else {
+    const buscado = pokemon.searchByName(dataMainPokemon, pokemonName);
+    document.getElementById('warning').innerHTML = '';
+    paintPokemones(buscado);
+  }
+});
+
+btnSearchAdv.addEventListener('click', () => {
+  const types = document.getElementById('types');
+  types.classList.remove('unseen');
+  types.classList.remove('show');
+});
+
+// Pintando pokemones en HTML(Historia de usuario #01)
 const paintPokemones = (arr) => {
-  let listofPokemons = '';
-  // recorrereldataMainconforEach
+  let listOfPokemones = '';
+  // Recorrer el dataMain con forEach
   arr.forEach((pokemones) => {
-  // almacenandoenunaconstloqueseimplementaráalHTML
+  // Almacenando en una const lo que se implementará al HTML
     const card = `
-         <div class="card-link">
-           <article class="blog-card">
-            <div class="center-items">
+      <div class="card-link">
+        <article class="blog-card">
+          <div class="center-items">
             <img class="pokemon-image" src="${ pokemones.img }" />
           </div>
           <div class="article-details">
@@ -25,13 +48,23 @@ const paintPokemones = (arr) => {
         </article>
       </div>
     `;
-    // concatenando info
-    listofPokemons += card;
+    // Concatenando info
+    listOfPokemones += card;
   });
-  // pintando en el html
-  divPokemon.innerHTML = listofPokemons;
+  // Pintando en el html
+  divPokemon.innerHTML = listOfPokemones;
 };
 
 paintPokemones(dataMainPokemon);
 
-// document.getElementById("1").innerHTML= mostrarData();
+const paintTypesInSelect = (arr) => {
+  let typesOfPokemon = '';
+  const types = pokemon.uniqueTypes(arr);
+  for (let i = 0; i < types.length; i++) {
+    const select = `<option value="${types[i]}">${types[i]}</option>`;
+    typesOfPokemon += select;
+  }
+  selectTypes.innerHTML = typesOfPokemon;
+};
+
+paintTypesInSelect(dataMainPokemon);
