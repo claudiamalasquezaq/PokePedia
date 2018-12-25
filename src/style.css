@@ -13,7 +13,8 @@
 header {
 	width: 100%;
 	height: 70px;	
-    background: #e46c7c;
+	/* background: #e46c7c; */
+	background-color: #FFDE00;
 	color: #f2f2f2;
 /*ocupe todo*/
     position: fixed;
@@ -29,7 +30,7 @@ header {
 
 h1 {
 	float: left;
-	/* color: #3B4CCA; */
+	color: #3B4CCA;
 }
 
 header .contenedor {
@@ -108,6 +109,15 @@ background: #8cc43c;
 color: #fff;
 }
 
+/* Clase para que se oculte el div */
+.unseen {
+	display: none;
+}
+
+/* Clase para que se muestre el div */
+.show {
+	display: block;
+}
 
 .footer {
 	background: gray;
