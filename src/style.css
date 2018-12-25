@@ -13,7 +13,8 @@
 header {
     width: 100%;
     height: 70px;
-    background: #FFDE00;
+	/* background: #FFDE00; */
+	background: #333;
 	color: #f2f2f2;
 /*ocupe todo*/
     position: fixed;
