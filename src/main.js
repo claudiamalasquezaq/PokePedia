@@ -1,14 +1,21 @@
 // Almacenando en dataMainPokemon la data a utilizar en la HU01
 const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon);
+
 // Dando id a la const donde se pintaran los pokemones
 const divPokemon = document.getElementById('list-pokemon');
 
+// Guardando el id del select
 const selectTypes = document.getElementById('paint-types');
 
-// const pokemonName = document.getElementById('pokemon-name').value;
+// const pokemonName = document.getElementById('pokemon-name').value
+
+// Botón de búsqueda H02
 const btnSearch = document.getElementById('btn-search');
+
+// Botón de búsqueda H03
 const btnSearchAdv = document.getElementById('btn-search-adv');
 
+// Agregando evento al botón de búsqueda H02
 btnSearch.addEventListener('click', () => {
   const pokemonName = document.getElementById('pokemon-name').value;
   if (pokemonName === '') {
@@ -20,6 +27,7 @@ btnSearch.addEventListener('click', () => {
   }
 });
 
+//Agregando evento al botón de búsqueda avanzada H03
 btnSearchAdv.addEventListener('click', () => {
   const types = document.getElementById('types');
   types.classList.remove('unseen');
@@ -57,14 +65,24 @@ const paintPokemones = (arr) => {
 
 paintPokemones(dataMainPokemon);
 
+// Pintando pokemones en el select H03
 const paintTypesInSelect = (arr) => {
   let typesOfPokemon = '';
   const types = pokemon.uniqueTypes(arr);
   for (let i = 0; i < types.length; i++) {
-    const select = `<option value="${types[i]}">${types[i]}</option>`;
+    const select = `
+    <option value="${types[i]}">${types[i]}</option>
+    `;
     typesOfPokemon += select;
   }
   selectTypes.innerHTML = typesOfPokemon;
 };
 
 paintTypesInSelect(dataMainPokemon);
+
+const ShowSelected = () => {
+/* Para obtener el texto */
+const combo = document.getElementById("paint-types");
+const selected = combo.options[combo.selectedIndex].text;
+alert(selected);
+};

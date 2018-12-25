@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PokePedia</title>
     <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/280/280954.png" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fontello.css" />
-    <link rel="stylesheet" href="styledivs.css" />
-    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/styledivs.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <header class="header">
@@ -36,7 +36,7 @@
         <button id="btn-search-adv">Advanced search</button>
         <div id ="types" class="unseen">
           <p>Types:</p>
-          <select id="paint-types">
+          <select name="paint-types" id="paint-types" onChange="ShowSelected()">
             <!--select con tipos de Pokémon-->
           </select>
         </div>
