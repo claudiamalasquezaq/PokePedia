@@ -15,6 +15,8 @@ const btnSearch = document.getElementById('btn-search');
 // Botón de búsqueda H03
 const btnSearchAdv = document.getElementById('btn-search-adv');
 
+const nameOfType = document.getElementById('nameOfType');
+
 // Agregando evento al botón de búsqueda H02
 btnSearch.addEventListener('click', () => {
   const pokemonName = document.getElementById('pokemon-name').value;
@@ -84,5 +86,5 @@ const ShowSelected = () => {
 /* Para obtener el texto */
 const combo = document.getElementById("paint-types");
 const selected = combo.options[combo.selectedIndex].text;
-alert(selected);
+nameOfType.innerHTML = selected;
 };
