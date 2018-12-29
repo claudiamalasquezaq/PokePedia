@@ -15,7 +15,7 @@ const btnSearch = document.getElementById('btn-search');
 // Botón de búsqueda H03
 const btnSearchAdv = document.getElementById('btn-search-adv');
 
-const nameOfType = document.getElementById('nameOfType');
+// const nameOfType = document.getElementById('nameOfType');
 
 // Agregando evento al botón de búsqueda H02
 btnSearch.addEventListener('click', () => {
@@ -29,7 +29,7 @@ btnSearch.addEventListener('click', () => {
   }
 });
 
-//Agregando evento al botón de búsqueda avanzada H03
+// Agregando evento al botón de búsqueda avanzada H03
 btnSearchAdv.addEventListener('click', () => {
   const types = document.getElementById('types');
   types.classList.remove('unseen');
@@ -82,9 +82,17 @@ const paintTypesInSelect = (arr) => {
 
 paintTypesInSelect(dataMainPokemon);
 
-const ShowSelected = () => {
-/* Para obtener el texto */
-const combo = document.getElementById("paint-types");
-const selected = combo.options[combo.selectedIndex].text;
-nameOfType.innerHTML = selected;
-};
+// const ShowSelected = () => {
+// /* Para obtener el texto */
+//   const combo = document.getElementById('paint-types');
+//   const selected = combo.options[combo.selectedIndex].text;
+//   nameOfType.innerHTML = selected;
+// };
+
+const btnSearchTypes = document.getElementById('btn-search-types');
+
+btnSearchTypes.addEventListener('click', () => {
+  const paintTypes = document.getElementById('paint-types').value;
+  const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
+  paintPokemones(filter);
+});
