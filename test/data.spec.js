@@ -50,7 +50,14 @@ const outputTypes = ['Grass', 'Poison', 'Grass', 'Poison', 'Grass', 'Poison', 'F
 // Output para la HU #03 : Obtener los tipos únicos
 const outputUniqueTypes = ['Grass', 'Poison', 'Fire', 'Water', 'Bug', 'Flying', 'Electric'];
 
-// const outputFilter = [{'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'], 'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']}];
+const outputFilter = [
+  {'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'],
+    'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Ivysaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/002.png', 'type': ['Grass', 'Poison'],
+    'height': '0.99 m', 'weight': '13.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Venusaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/003.png', 'type': ['Grass', 'Poison'],
+    'height': '2.01 m', 'weight': '100.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}
+];
 
 // Test para la 1era historia de usuario: Mostrar solo ciertas propiedades de la data
 describe('pokemon.getDataMainOfPokemon', () => {
@@ -92,6 +99,15 @@ describe('pokemon.uniqueTypes', () => {
 
   it('debería retornar los tipos únicos', () => {
     expect(pokemon.uniqueTypes(input)).toEqual(outputUniqueTypes);
+  });
+});
+// Test para la función que filtra por tipo
+describe('pokemon.filterForType', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.filterForType).toBe('function');
+  });
+  it('debería retornar los pokémon que tienen como tipo "Grass"', () => {
+    expect(pokemon.filterForType(input, 'Grass')).toEqual(outputFilter);
   });
 });
 
