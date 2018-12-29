@@ -37,10 +37,10 @@ const uniqueTypes = (data) => {
 };
 
 const filterForType = (arr,type) => {
-  arr.filter(function(el) {
-    return (el.type.includes(type));
-});
-};
+  // const getPokemon = arr.filter(el.type.includes(type));
+    arr.filter(function(el) {
+      return (el.type.includes('type'));
+})};
 
 const calculateQuantityByType = () => {};
 
@@ -49,8 +49,8 @@ window.pokemon = {
   searchByName,
   getTypes,
   uniqueTypes,
-  calculateQuantityByType,
   filterForType,
+  calculateQuantityByType,
 };
  
  
