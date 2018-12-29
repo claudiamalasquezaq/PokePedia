@@ -36,10 +36,14 @@ const uniqueTypes = (data) => {
   return acumType;
 };
 
-const filterForType = (arr,type) => {
-  arr.filter(function(el) {
-    return (el.type.includes(type));
-});
+const filterForType = (arr, nameType) => {
+  let arrFiltType = [];
+  arr.filter(function(elem) {
+    if (elem.type.includes(nameType)) {
+      arrFiltType.push(elem);
+    } 
+  });
+  return arrFiltType;
 };
 
 const calculateQuantityByType = () => {};
