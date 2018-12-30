@@ -2,31 +2,32 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokePedia</title>
     <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/280/280954.png" />
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link rel="stylesheet" href="fontello.css" type="text/css"/>
     <link rel="stylesheet" href="styledivs.css" type="text/css"/>
     <link rel="stylesheet" href="menu.css" type="text/css"/>
+    <link rel="stylesheet" href="grid.css" type="text/css"/>
   </head>
   <body>
     <header class="header">
       <div class="contenedor">
-          <h1 class="logo">PokePedia</h1>
-          <input type="checkbox" id="menu-bar" />
-          <label for="menu-bar" class="icon-menu"></label>
-            <nav class="menu">
-              <a href="#">Home</a>
-              <a href="#">What is PokePedia?</a>
-              <a href="#">Contact</a>
-            </nav>
+        <h1 class="logo col-lg-10 col-md-10 col-sm-10 col-xs-10">PokePedia</h1>
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" class="icon-menu col-lg-2 col-md-2 col-sm-2 col-xs-2"></label>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">What is PokePedia?</a>
+          <a href="#">Contact</a>
+        </nav>
       </div>
     </header>
     <main class="main center-items"> 
       <div class="container">
-        <h2 class="centrartexto">WELCOME TO THE POKEMON WORLD</h2>
-        <h3 class="centrartexto">Discover it!</h3>
+        <h2>WELCOME TO THE POKEMON WORLD</h2>
+        <h3>Discover it!</h3>
         <div class="sectionOfToolbar">
           <p>Enter the name of the Pokémon</p>
           <input type="text" id="pokemon-name" class="toolbar-search"/>
@@ -42,7 +43,7 @@
           </select>
           <button id="btn-search-types">Search</button>
         </div>
-        <h7 id="nameOfType"></h7>
+        <!-- <h7 id="nameOfType"></h7> -->
         <div id="list-pokemon">
           <!--lista de pokemones-->
         </div>
@@ -50,8 +51,8 @@
     </main>
     <footer class="footer">
       <div class="container"> 
-      <p>©Copyright 2018 by Lu & Clau. All rights reserved.</p>
-    </div>
+        <p>©Copyright 2018 by Lu & Clau. All rights reserved.</p>
+      </div>
     </footer>
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
