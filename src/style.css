@@ -23,9 +23,11 @@ header {
     z-index: 100;
 }
 
-.contenedor{
-    width: 98%;
-    margin: auto;
+.contenedor, .fila {
+	position: relative;
+	margin: auto;
+  width: 100%;
+	height: auto;
 }
 
 h1 {
@@ -76,7 +78,7 @@ ocupe todo
 	text-align: center;
 }
 
-h2{
+h2 {
 	font-family: 'Paprika',cursive;
 }
 
@@ -132,22 +134,24 @@ color: #fff;
 	/* clear: left; */
 }
 
-/* 
-@media only screen and (max-width: 700px){
-header .logo, .navegation {
-	width: 100%;
-	width: 100%;
-	text-align: center;
-	line-height: 100px;
-}
-.navegation ul li {
-	display: inline-block;
-}
-.navegation ul li a {
-	display: block;
-	padding: 0.5em 1rem;
-	transition: all 0.4s linear;
-	border-radius: 5px;
-}
-.main {
-	padding-top: 20rem */
+
+/* @media only screen and (max-width: 700px){
+  header .logo, .navegation {
+    width: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+  }
+  .navegation ul li {
+    display: inline-block;
+  }
+  .navegation ul li a {
+    display: block;
+    padding: 0.5em 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  .main {
+    padding-top: 20rem;
+  }
+} */
