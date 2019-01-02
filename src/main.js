@@ -100,3 +100,9 @@ btnSearchTypes.addEventListener('click', () => {
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
   paintPokemones(filter);
 });
+
+const btnReturn = document.getElementById('btnReturn');
+
+btnReturn.addEventListener('Click', () => {
+  location.reload(true);
+});
