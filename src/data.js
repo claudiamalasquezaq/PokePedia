@@ -46,7 +46,15 @@ const filterForType = (arr, nameType) => {
   return arrFiltType;
 };
 
-const calculateQuantityByType = () => {};
+const calculateQuantityByType = (arr, type) => {
+  const filtrado = filterForType(arr, type);
+  const newArr = filtrado.reduce((contadorTipo, type) => {
+    contadorTipo[type] = (contadorTipo[type] || 0) + 1;
+    return contadorTipo;
+  }, {});
+  return newArr;
+};
+
 
 window.pokemon = {
   getDataMainOfPokemon,

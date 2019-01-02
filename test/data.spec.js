@@ -112,11 +112,11 @@ describe('pokemon.filterForType', () => {
 });
 
 // Test para la 4ta historia de usuario: Cálculo de veces que se repiten los tipos de Pokémon
-// describe('calculateQuantityByType', () => {
-//   it('debería retornar una función', () => {
-//     expect(typeof pokemon.calculateQuantityByType).toBe('function');
-//   });
+describe('calculateQuantityByType', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.calculateQuantityByType).toBe('function');
+  });
 //   it('debería retornar la cantidad que se repite un tipo', () => {
 //     expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
 //   });
-// });
+});
