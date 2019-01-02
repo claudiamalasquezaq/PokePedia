@@ -15,6 +15,9 @@ const btnSearch = document.getElementById('btn-search');
 // Botón de búsqueda H03
 const btnSearchAdv = document.getElementById('btn-search-adv');
 
+// Botón de búsqueda H03 PARA FILTRAR
+// const btnSearchByType = document.getElementById('btn-search-types');
+
 // const nameOfType = document.getElementById('nameOfType');
 
 // Agregando evento al botón de búsqueda H02
@@ -92,6 +95,7 @@ paintTypesInSelect(dataMainPokemon);
 const btnSearchTypes = document.getElementById('btn-search-types');
 
 btnSearchTypes.addEventListener('click', () => {
+  document.getElementById('btnReturn').style.display = 'block';
   const paintTypes = document.getElementById('paint-types').value;
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
   paintPokemones(filter);
