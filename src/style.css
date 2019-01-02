@@ -171,23 +171,3 @@ color: #fff;
 }
 
 
-/* @media only screen and (max-width: 700px){
-  header .logo, .navegation {
-    width: 100%;
-    width: 100%;
-    text-align: center;
-    line-height: 100px;
-  }
-  .navegation ul li {
-    display: inline-block;
-  }
-  .navegation ul li a {
-    display: block;
-    padding: 0.5em 1rem;
-    transition: all 0.4s linear;
-    border-radius: 5px;
-  }
-  .main {
-    padding-top: 20rem;
-  }
-} */
