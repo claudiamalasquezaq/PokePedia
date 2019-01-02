@@ -70,7 +70,13 @@ const getAverageHeight = (arr, nameType) => {
   return (total / sizeArr);
 };
 
-const calculateQuantityByType = () => {};
+
+const calculateQuantityByType = (arr, type) => {
+  const filtrado = filterForType(arr, type);
+  const newArr = filtrado.length;
+  return newArr;
+};
+
 
 window.pokemon = {
   getDataMainOfPokemon,
