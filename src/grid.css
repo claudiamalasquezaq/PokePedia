@@ -1,7 +1,7 @@
 @media screen and (min-width: 1200px) {
   .col-xl-12{width: 100%;}
   .col-xl-10{width: 83.33333333%;}
-  .col-xl-2{width: 24.5%;}
+  .col-xl-2{width: 31%;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 900px) {
