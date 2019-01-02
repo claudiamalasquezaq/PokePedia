@@ -111,12 +111,31 @@ describe('pokemon.filterForType', () => {
   });
 });
 
+// Test para la función para sacar el promedio de peso y talla de un tipo de Pokémon
+describe('pokemon.getAverageWeigth', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.getAverageWeight).toBe('function');
+  });
+  it('debería retornar el promedio del peso de los Pokémon tipo "Poison"', () => {
+    expect(pokemon.getAverageWeight(input, 'Poison')).toEqual(39.96666666666667);
+  });
+});
+
+describe('pokemon.getAverageHeight', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.getAverageHeight).toBe('function');
+  });
+  it('debería retornar el promedio del peso de los Pokémon tipo "Poison"', () => {
+    expect(pokemon.getAverageHeight(input, 'Poison')).toEqual(1.2366666666666666);
+  });
+});
+
 // Test para la 4ta historia de usuario: Cálculo de veces que se repiten los tipos de Pokémon
-// describe('calculateQuantityByType', () => {
-//   it('debería retornar una función', () => {
-//     expect(typeof pokemon.calculateQuantityByType).toBe('function');
-//   });
-//   it('debería retornar la cantidad que se repite un tipo', () => {
-//     expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
-//   });
-// });
+describe('calculateQuantityByType', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.calculateQuantityByType).toBe('function');
+  });
+  // it('debería retornar la cantidad que se repite un tipo', () => {
+  //   expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
+  // });
+});
