@@ -1,10 +1,7 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
 // Obtener data principal de Pokemon (Historia de usuario #01)
 const getDataMainOfPokemon = (arr) => {
   let newArr = [];
-  arr.forEach(function(element) {
+  arr.forEach((element) => {
     newArr.push({name: element.name, img: element.img, type: element.type, height: element.height, weight: element.weight, weaknesses: element.weaknesses});
   });
   return newArr;
@@ -38,12 +35,39 @@ const uniqueTypes = (data) => {
 
 const filterForType = (arr, nameType) => {
   let arrFiltType = [];
-  arr.filter(function(elem) {
+  arr.filter((elem) => {
     if (elem.type.includes(nameType)) {
       arrFiltType.push(elem);
     } 
   });
   return arrFiltType;
+};
+
+const getAverageWeight = (arr, nameType) => {
+  let newArr = [];
+  const arrFilt = filterForType(arr, nameType);
+  arrFilt.forEach((elem) => {
+    newArr.push(parseFloat(elem.weight));
+  });
+  const sizeArr = newArr.length;
+  const total = newArr.reduce((cont, tip) => {
+    return cont + tip;
+  });
+  let avg = total / sizeArr;
+  return avg;
+};
+
+const getAverageHeight = (arr, nameType) => {
+  let newArr = [];
+  const arrFilt = filterForType(arr, nameType);
+  arrFilt.forEach((elem) => {
+    newArr.push(parseFloat(elem.height));
+  });
+  const sizeArr = newArr.length;
+  const total = newArr.reduce((cont, tip) => {
+    return cont + tip;
+  });
+  return (total / sizeArr);
 };
 
 const calculateQuantityByType = () => {};
@@ -54,6 +78,8 @@ window.pokemon = {
   getTypes,
   uniqueTypes,
   filterForType,
+  getAverageWeight,
+  getAverageHeight,
   calculateQuantityByType,
 };
  
