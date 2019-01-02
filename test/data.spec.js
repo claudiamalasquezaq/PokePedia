@@ -59,6 +59,8 @@ const outputFilter = [
     'height': '2.01 m', 'weight': '100.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}
 ];
 
+// Output para la HU #04 : Obtener cantidad de pokemones según su tipo
+const outputCalculate = 1;
 // Test para la 1era historia de usuario: Mostrar solo ciertas propiedades de la data
 describe('pokemon.getDataMainOfPokemon', () => {
   it('debería retornar una función', () => {
@@ -116,7 +118,7 @@ describe('calculateQuantityByType', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.calculateQuantityByType).toBe('function');
   });
-//   it('debería retornar la cantidad que se repite un tipo', () => {
-//     expect(pokemon.calculateQuantityByType(input)).toEqual(outputCalculate);
-//   });
+  it('debería retornar la cantidad que se repite un tipo', () => {
+    expect(pokemon.calculateQuantityByType(input, 'Fire')).toEqual(outputCalculate);
+  });
 });

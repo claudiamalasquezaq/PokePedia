@@ -48,10 +48,7 @@ const filterForType = (arr, nameType) => {
 
 const calculateQuantityByType = (arr, type) => {
   const filtrado = filterForType(arr, type);
-  const newArr = filtrado.reduce((contadorTipo, type) => {
-    contadorTipo[type] = (contadorTipo[type] || 0) + 1;
-    return contadorTipo;
-  }, {});
+  const newArr = filtrado.length;
   return newArr;
 };
 
