@@ -87,6 +87,10 @@ h4 {
 	font-size: 28px;
 }
 
+#btnReturn {
+	display: none;
+}
+
 #nameOfType {
 font-size: 30px;
 padding: 18px;
@@ -114,8 +118,44 @@ width: 30px;
 height: 30px;
 background: #8cc43c;
 color: #fff;
+border-radius: 7px;
+border: none;
+cursor: pointer;
 }
 
+.button-advancedSearch {
+	padding: 9px;
+	margin: 15px;
+	cursor: pointer;
+	border: none;
+	border-radius: 7px;
+	font-family: 'Paprika',cursive;
+	background: #3B4CCA;
+	color: #fff;
+}
+
+.aligne{
+	display: inline;
+}
+.select {
+	padding: 5px;
+	font-family: 'Paprika',cursive;
+}
+
+.search-select {
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px;
+	font-family: 'Paprika',cursive;
+cursor: pointer;
+background: #3B4CCA;
+color: #fff;	
+}
+
+.p-types {
+	padding: 8px;
+	font-family: 'Paprika',cursive;
+}
 /* Clase para que se oculte el div */
 .unseen {
 	display: none;
@@ -135,23 +175,3 @@ color: #fff;
 }
 
 
-/* @media only screen and (max-width: 700px){
-  header .logo, .navegation {
-    width: 100%;
-    width: 100%;
-    text-align: center;
-    line-height: 100px;
-  }
-  .navegation ul li {
-    display: inline-block;
-  }
-  .navegation ul li a {
-    display: block;
-    padding: 0.5em 1rem;
-    transition: all 0.4s linear;
-    border-radius: 5px;
-  }
-  .main {
-    padding-top: 20rem;
-  }
-} */

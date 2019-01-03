@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="fontello.css" type="text/css"/>
     <link rel="stylesheet" href="styledivs.css" type="text/css"/>
     <link rel="stylesheet" href="menu.css" type="text/css"/>
-   <!-- <link rel="stylesheet" href="grid.css" type="text/css"/> -->
-  </head>
+    <link rel="stylesheet" href="grid.css" type="text/css"/>
+ </head>
   <body>
     <header class="header">
       <div class="contenedor">
-        <h1 class="logo col-lg-10 col-md-10 col-sm-10 col-xs-10">PokePedia</h1>
+        <h1 class="logo col-lg-10 col-xs-10">PokePedia</h1>
         <input type="checkbox" id="menu-bar" />
-        <label for="menu-bar" class="icon-menu col-lg-2 col-md-2 col-sm-2 col-xs-2"></label>
+        <label for="menu-bar" class="icon-menu col-xl-2 col-lg-2 col-xs-2"></label>
         <nav class="menu">
           <a href="#">Home</a>
           <a href="#">What is PokePedia?</a>
@@ -34,19 +34,20 @@
           <button id="btn-search" class="icon-search button-search"></button>
           <p id="warning"></p>
         </div>
-        <button id="btn-search-adv">Advanced search</button>
-        <div id ="types" class="unseen">
-          <p>Types:</p>
-          <select name="paint-types" id="paint-types">
+        <button id="btn-search-adv" class="button-advancedSearch">Advanced search</button>
+        <div id ="types" class="unseen aligne">
+          <p class="p-types">Types:</p>
+          <select name="paint-types" id="paint-types" class="select">
               <!-- evento en index.html onChange="ShowSelected()" -->
             <!--select con tipos de Pokémon-->
           </select>
-          <button id="btn-search-types">Search</button>
+          <button id="btn-search-types" class="search-select">Search</button>
         </div>
         <!-- <h7 id="nameOfType"></h7> -->
         <div id="list-pokemon" class="containerdivs center-items">
           <!--lista de pokemones-->
         </div>
+        <button id="btnReturn">RETURN</button>
       </div>
     </main>
     <footer class="footer">

@@ -15,6 +15,9 @@ const btnSearch = document.getElementById('btn-search');
 // Botón de búsqueda H03
 const btnSearchAdv = document.getElementById('btn-search-adv');
 
+// Botón de búsqueda H03 PARA FILTRAR
+// const btnSearchByType = document.getElementById('btn-search-types');
+
 // const nameOfType = document.getElementById('nameOfType');
 
 // Agregando evento al botón de búsqueda H02
@@ -43,7 +46,7 @@ const paintPokemones = (arr) => {
   arr.forEach((pokemones) => {
   // Almacenando en una const lo que se implementará al HTML
     const card = `
-      <div class="card-link col-lg-2 col-md-10 col-sm-10 col-xs-10 box">
+      <div class="card-link col-xl-2 col-lg-2 col-xs-10">
         <article class="blog-card">
           <div class="center-items">
             <img class="pokemon-image" src="${ pokemones.img }" />
@@ -92,7 +95,14 @@ paintTypesInSelect(dataMainPokemon);
 const btnSearchTypes = document.getElementById('btn-search-types');
 
 btnSearchTypes.addEventListener('click', () => {
+  document.getElementById('btnReturn').style.display = 'block';
   const paintTypes = document.getElementById('paint-types').value;
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
   paintPokemones(filter);
+});
+
+const btnReturn = document.getElementById('btnReturn');
+
+btnReturn.addEventListener('Click', () => {
+  location.reload(true);
 });
