@@ -108,5 +108,5 @@ btnSearchTypes.addEventListener('click', () => {
 // }
 
 btnReturn1.addEventListener('click', () => {
-  location.reload()
+  location.reload();
 });
