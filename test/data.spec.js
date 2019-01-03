@@ -142,9 +142,15 @@ describe('calculateQuantityByType', () => {
   });
 });
 
-// Test para la 5ta historia de usuario: Ordenar de la A-Z los nombres de los pokemones
+// Test para la 5ta historia de usuario: Ordenar de la A-Z y Z-A los nombres de los pokemones
 describe('orderAZ', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.orderAZ).toBe('function');
+  });
+});
+
+describe('orderZA', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.orderZA).toBe('function');
   });
 });
