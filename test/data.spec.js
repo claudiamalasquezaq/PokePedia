@@ -141,3 +141,10 @@ describe('calculateQuantityByType', () => {
     expect(pokemon.calculateQuantityByType(input, 'Fire')).toEqual(outputCalculate);
   });
 });
+
+// Test para la 5ta historia de usuario: Ordenar de la A-Z los nombres de los pokemones
+describe('orderAZ', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.orderAZ).toBe('function');
+  });
+});

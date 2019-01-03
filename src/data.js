@@ -77,6 +77,10 @@ const calculateQuantityByType = (arr, type) => {
   return newArr;
 };
 
+const orderAZ = () => {};
+
+const orderZA = () => {
+};
 
 window.pokemon = {
   getDataMainOfPokemon,
@@ -87,6 +91,8 @@ window.pokemon = {
   getAverageWeight,
   getAverageHeight,
   calculateQuantityByType,
+  orderAZ,
+  orderZA
 };
  
  
