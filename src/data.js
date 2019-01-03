@@ -90,8 +90,19 @@ const orderAZ = (arr) => {
   return ordenado;
 };
 
-const orderZA = () => {
+const orderZA = (arr) => {
+  const ordenado = arr.sort((propiedad1, propiedad2) => {
+    if (propiedad1.name > propiedad2.name) {
+      return -1;
+    }
+    if (propiedad1.name < propiedad2.name) {
+      return +1;
+    }
+    return 0;
+  });
+  return ordenado;
 };
+
 
 window.pokemon = {
   getDataMainOfPokemon,
