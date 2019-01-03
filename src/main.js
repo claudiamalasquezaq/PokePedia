@@ -101,8 +101,14 @@ btnSearchTypes.addEventListener('click', () => {
   paintPokemones(filter);
 });
 
-const btnReturn = document.getElementById('btnReturn');
+// const btnReturn = document.getElementById('btnReturn');
 
-btnReturn.addEventListener('Click', () => {
-  location.reload(true);
-});
+// function reFresh(){
+// document.location.reload(true)
+// };
+
+// btnReturn.addEventListener('Click', reFresh);
+
+function myFunction() {
+  location.reload();
+}
