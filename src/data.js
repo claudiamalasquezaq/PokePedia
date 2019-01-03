@@ -77,31 +77,44 @@ const calculateQuantityByType = (arr, type) => {
   return newArr;
 };
 
-const orderAZ = (arr) => {
-  const ordenado = arr.sort((propiedad1, propiedad2) => {
-    if (propiedad1.name > propiedad2.name) {
-      return +1;
-    }
-    if (propiedad1.name < propiedad2.name) {
-      return -1;
-    }
-    return 0;
-  });
-  return ordenado;
+const orderAZ = (arr, typeOfOrder) => {
+  if (typeOfOrder === 'A-Z') {
+    const ordenado = arr.sort((propiedad1, propiedad2) => {
+      if (propiedad1.name > propiedad2.name) {
+        return +1;
+      }
+      if (propiedad1.name < propiedad2.name) {
+        return -1;
+      }
+      return 0;
+    });
+    return ordenado;
+  } else if (typeOfOrder === 'Z-A') {
+    const ordenado = arr.sort((propiedad1, propiedad2) => {
+      if (propiedad1.name > propiedad2.name) {
+        return -1;
+      }
+      if (propiedad1.name < propiedad2.name) {
+        return +1;
+      }
+      return 0;
+    });
+    return ordenado;
+  }
 };
 
-const orderZA = (arr) => {
-  const ordenado = arr.sort((propiedad1, propiedad2) => {
-    if (propiedad1.name > propiedad2.name) {
-      return -1;
-    }
-    if (propiedad1.name < propiedad2.name) {
-      return +1;
-    }
-    return 0;
-  });
-  return ordenado;
-};
+// const orderZA = (arr) => {
+//   const ordenado = arr.sort((propiedad1, propiedad2) => {
+//     if (propiedad1.name > propiedad2.name) {
+//       return -1;
+//     }
+//     if (propiedad1.name < propiedad2.name) {
+//       return +1;
+//     }
+//     return 0;
+//   });
+//   return ordenado;
+// };
 
 
 window.pokemon = {
@@ -114,7 +127,7 @@ window.pokemon = {
   getAverageHeight,
   calculateQuantityByType,
   orderAZ,
-  orderZA
+  // orderZA
 };
  
  

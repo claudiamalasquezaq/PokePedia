@@ -103,10 +103,14 @@ btnSearchTypes.addEventListener('click', () => {
   paintPokemones(filter);
 });
 
-// function myFunction() {
-//   location.reload();
-// }
-
 btnReturn1.addEventListener('click', () => {
   location.reload();
+});
+
+const buttonOrderBy = document.getElementById('selectOrder');
+
+buttonOrderBy.addEventListener('click', () => {
+  const selectOrder = document.getElementById('selectOrder').value;
+  const ordenando = pokemon.orderAZ(dataMainPokemon, selectOrder);
+  paintPokemones(ordenando);
 });

@@ -87,6 +87,23 @@ h4 {
 	font-size: 28px;
 }
 
+.select2 {
+    background-color: #313131;
+	border: none;
+	padding: 9px;
+	margin: 15px;
+    border-radius: 7px;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Paprika',cursive;
+}
+
+option {
+	background-color: #313131;
+	font-family: 'Paprika',cursive;
+    color: #fff;
+}
+
 #btnReturn {
 	margin: 10px;
 	padding: 10px;
@@ -144,6 +161,7 @@ cursor: pointer;
 .aligne{
 	display: inline;
 }
+
 .select {
 	padding: 5px;
 	font-family: 'Paprika',cursive;
