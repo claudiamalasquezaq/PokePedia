@@ -53,8 +53,8 @@ const getAverageWeight = (arr, nameType) => {
   const total = newArr.reduce((cont, tip) => {
     return cont + tip;
   });
-  let avg = total / sizeArr;
-  return avg;
+  const avgW = total / sizeArr;
+  return Math.round(avgW * 100) / 100;
 };
 
 const getAverageHeight = (arr, nameType) => {
@@ -67,7 +67,8 @@ const getAverageHeight = (arr, nameType) => {
   const total = newArr.reduce((cont, tip) => {
     return cont + tip;
   });
-  return (total / sizeArr);
+  const avgH = total / sizeArr;
+  return Math.round(avgH * 100) / 100;
 };
 
 
@@ -76,7 +77,6 @@ const calculateQuantityByType = (arr, type) => {
   const newArr = filtrado.length;
   return newArr;
 };
-
 
 window.pokemon = {
   getDataMainOfPokemon,
