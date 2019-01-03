@@ -156,4 +156,7 @@ describe('orderZA', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.orderZA).toBe('function');
   });
+  it('debería retornar un array con la propiedad name ordenado de la Z-A', () => {
+    expect(pokemon.orderZA(input)).toEqual(outputOrderZA);
+  });
 });
