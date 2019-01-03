@@ -59,6 +59,40 @@ const outputFilter = [
     'height': '2.01 m', 'weight': '100.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}
 ];
 
+const outputOrderAZ = [
+  {'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'],
+    'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Butterfree', 'img': 'http://www.serebii.net/pokemongo/pokemon/012.png', 'type': ['Bug', 'Flying'],
+    'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}, 
+  {'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'],
+    'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']},
+  {'name': 'Ivysaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/002.png', 'type': ['Grass', 'Poison'],
+    'height': '0.99 m', 'weight': '13.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Pikachu', 'img': 'http://www.serebii.net/pokemongo/pokemon/025.png', 'type': ['Electric'],
+    'height': '0.41 m', 'weight': '6.0 kg', 'weaknesses': ['Ground']},
+  {'name': 'Squirtle', 'img': 'http://www.serebii.net/pokemongo/pokemon/007.png', 'type': ['Water'],
+    'height': '0.51 m', 'weight': '9.0 kg', 'weaknesses': ['Electric', 'Grass']},
+  {'name': 'Venusaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/003.png', 'type': ['Grass', 'Poison'],
+    'height': '2.01 m', 'weight': '100.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+];
+
+const outputOrderZA = [
+  {'name': 'Venusaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/003.png', 'type': ['Grass', 'Poison'],
+    'height': '2.01 m', 'weight': '100.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Squirtle', 'img': 'http://www.serebii.net/pokemongo/pokemon/007.png', 'type': ['Water'],
+    'height': '0.51 m', 'weight': '9.0 kg', 'weaknesses': ['Electric', 'Grass']},
+  {'name': 'Pikachu', 'img': 'http://www.serebii.net/pokemongo/pokemon/025.png', 'type': ['Electric'],
+    'height': '0.41 m', 'weight': '6.0 kg', 'weaknesses': ['Ground']},
+  {'name': 'Ivysaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/002.png', 'type': ['Grass', 'Poison'],
+    'height': '0.99 m', 'weight': '13.0 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Charmander', 'img': 'http://www.serebii.net/pokemongo/pokemon/004.png', 'type': ['Fire'],
+    'height': '0.61 m', 'weight': '8.5 kg', 'weaknesses': ['Water', 'Ground', 'Rock']},
+  {'name': 'Butterfree', 'img': 'http://www.serebii.net/pokemongo/pokemon/012.png', 'type': ['Bug', 'Flying'],
+    'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+  {'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'],
+    'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']},
+];
+
 // Output para la HU #04 : Obtener cantidad de pokemones según su tipo
 const outputCalculate = 1;
 // Test para la 1era historia de usuario: Mostrar solo ciertas propiedades de la data
