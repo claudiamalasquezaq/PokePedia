@@ -77,10 +77,16 @@ Es el prototipo hecho en lápiz y papel, las dos ideas de pantalla de inicio y l
 #### PROTOTIPO 2
 ![Prototipo2](https://i.ibb.co/CVLJ0QV/Scan.jpg)
 
+#### PROTOTIPO 3
+![Prototipo3](https://i.ibb.co/1sYBDyh/Scan02.jpg)
+
 _Prototipo de alta fidelidad_
 Es el prototipo hecho en figma, el primero que pondremos es el de la historia de usuario "Listar todos los Pokémon"
 
-![Prototipo3](https://i.ibb.co/1sYBDyh/Scan02.jpg)
+![PrototipoF1]()
+![PrototipoF2]()
+![PrototipoF3]()
+![PrototipoF4]()
 
 ### _Testeo con usuarios_
 
