@@ -93,6 +93,7 @@ paintTypesInSelect(dataMainPokemon);
 // };
 
 const btnSearchTypes = document.getElementById('btn-search-types');
+const btnReturn1 = document.getElementById('btnReturn');
 
 btnSearchTypes.addEventListener('click', () => {
   document.getElementById('btnReturn').style.display = 'block';
@@ -101,14 +102,10 @@ btnSearchTypes.addEventListener('click', () => {
   paintPokemones(filter);
 });
 
-// const btnReturn = document.getElementById('btnReturn');
+// function myFunction() {
+//   location.reload();
+// }
 
-// function reFresh(){
-// document.location.reload(true)
-// };
-
-// btnReturn.addEventListener('Click', reFresh);
-
-function myFunction() {
-  location.reload();
-}
+btnReturn1.addEventListener('click', () => {
+  location.reload()
+});
