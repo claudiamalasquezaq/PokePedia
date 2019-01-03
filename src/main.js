@@ -82,12 +82,9 @@ const paintTypesInSelect = (arr) => {
 
 paintTypesInSelect(dataMainPokemon);
 
-// const ShowSelected = () => {
-// /* Para obtener el texto */
-//   const combo = document.getElementById('paint-types');
-//   const selected = combo.options[combo.selectedIndex].text;
-//   nameOfType.innerHTML = selected;
-// };
+const resultFound = document.getElementById('result-found');
+const avgWeight = document.getElementById('avg-weight');
+const avgHeight = document.getElementById('avg-height');
 
 const btnSearchTypes = document.getElementById('btn-search-types');
 
@@ -95,4 +92,8 @@ btnSearchTypes.addEventListener('click', () => {
   const paintTypes = document.getElementById('paint-types').value;
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
   paintPokemones(filter);
+  resultFound.innerHTML = pokemon.calculateQuantityByType(dataMainPokemon, paintTypes) + ' result found';
+  avgWeight.innerHTML = 'Average weight: ' + pokemon.getAverageWeight(dataMainPokemon, paintTypes);
+  avgHeight.innerHTML = 'Average height: ' + pokemon.getAverageHeight(dataMainPokemon, paintTypes);
 });
+
