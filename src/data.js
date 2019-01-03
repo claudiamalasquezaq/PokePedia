@@ -77,7 +77,18 @@ const calculateQuantityByType = (arr, type) => {
   return newArr;
 };
 
-const orderAZ = () => {};
+const orderAZ = (arr) => {
+  const ordenado = arr.sort((propiedad1, propiedad2) => {
+    if (propiedad1.name > propiedad2.name) {
+      return +1;
+    }
+    if (propiedad1.name < propiedad2.name) {
+      return -1;
+    }
+    return 0;
+  });
+  return ordenado;
+};
 
 const orderZA = () => {
 };
