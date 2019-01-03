@@ -88,7 +88,14 @@ h4 {
 }
 
 #btnReturn {
+	margin: 10px;
+	padding: 10px;
 	display: none;
+	text-align: center;
+	background: #8cc43c;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
 }
 
 #nameOfType {

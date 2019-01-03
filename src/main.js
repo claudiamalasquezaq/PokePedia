@@ -22,6 +22,7 @@ const btnSearchAdv = document.getElementById('btn-search-adv');
 
 // Agregando evento al botón de búsqueda H02
 btnSearch.addEventListener('click', () => {
+  document.getElementById('btnReturn').style.display = 'block';
   const pokemonName = document.getElementById('pokemon-name').value;
   if (pokemonName === '') {
     document.getElementById('warning').innerHTML = 'Ingrese el nombre del pokémon que desea buscar';
