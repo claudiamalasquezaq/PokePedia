@@ -77,7 +77,7 @@ const calculateQuantityByType = (arr, type) => {
   return newArr;
 };
 
-const orderAZ = (arr, typeOfOrder) => {
+const order = (arr, typeOfOrder) => {
   if (typeOfOrder === 'nameAsc') {
     const ordenado = arr.sort((propiedad1, propiedad2) => {
       if (propiedad1.name > propiedad2.name) {
@@ -112,8 +112,7 @@ window.pokemon = {
   getAverageWeight,
   getAverageHeight,
   calculateQuantityByType,
-  orderAZ,
-  // orderZA
+  order,
 };
  
  
