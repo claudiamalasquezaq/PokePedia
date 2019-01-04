@@ -182,15 +182,10 @@ describe('orderAZ', () => {
     expect(typeof pokemon.orderAZ).toBe('function');
   });
   it('debería retornar un array con la propiedad name ordenado de la A-Z', () => {
-    expect(pokemon.orderAZ(input)).toEqual(outputOrderAZ);
+    expect(pokemon.order(input)).toEqual(outputOrderAZ);
   });
-});
 
-describe('orderZA', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.orderZA).toBe('function');
-  });
   it('debería retornar un array con la propiedad name ordenado de la Z-A', () => {
-    expect(pokemon.orderZA(input)).toEqual(outputOrderZA);
+    expect(pokemon.order(input)).toEqual(outputOrderZA);
   });
 });
