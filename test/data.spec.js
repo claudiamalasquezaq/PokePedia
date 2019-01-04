@@ -177,15 +177,15 @@ describe('calculateQuantityByType', () => {
 });
 
 // Test para la 5ta historia de usuario: Ordenar de la A-Z y Z-A los nombres de los pokemones
-describe('orderAZ', () => {
+describe('order', () => {
   it('debería retornar una función', () => {
-    expect(typeof pokemon.orderAZ).toBe('function');
+    expect(typeof pokemon.order).toBe('function');
   });
   it('debería retornar un array con la propiedad name ordenado de la A-Z', () => {
-    expect(pokemon.order(input)).toEqual(outputOrderAZ);
+    expect(pokemon.order(input, 'nameAsc')).toEqual(outputOrderAZ);
   });
 
   it('debería retornar un array con la propiedad name ordenado de la Z-A', () => {
-    expect(pokemon.order(input)).toEqual(outputOrderZA);
+    expect(pokemon.order(input, 'nameDesc')).toEqual(outputOrderZA);
   });
 });
