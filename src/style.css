@@ -40,6 +40,7 @@ header .contenedor {
 }
 
 .logo {
+	margin-right: 50px;
 	padding-top: 16px;
 	font-family: pokemon;
 }

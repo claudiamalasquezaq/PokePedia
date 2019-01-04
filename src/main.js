@@ -22,6 +22,7 @@ const btnSearchAdv = document.getElementById('btn-search-adv');
 
 // Agregando evento al botón de búsqueda H02
 btnSearch.addEventListener('click', () => {
+  document.getElementById('types').style.display = 'none';
   document.getElementById('btnReturn').style.display = 'block';
   const pokemonName = document.getElementById('pokemon-name').value;
   if (pokemonName === '') {
@@ -35,11 +36,15 @@ btnSearch.addEventListener('click', () => {
 
 // Agregando evento al botón de búsqueda avanzada H03
 btnSearchAdv.addEventListener('click', () => {
+  document.getElementById('selectOrder').style.display = 'none';
   const types = document.getElementById('types');
   types.classList.remove('unseen');
   types.classList.remove('show');
 });
 
+btnSearchAdv.addEventListener('dblclick', () => {
+  document.getElementById('types').style.display = 'none';
+});
 // Pintando pokemones en HTML(Historia de usuario #01)
 const paintPokemones = (arr) => {
   let listOfPokemones = '';
