@@ -77,8 +77,8 @@ const calculateQuantityByType = (arr, type) => {
   return newArr;
 };
 
-const orderAZ = (arr, typeOfOrder) => {
-  if (typeOfOrder === 'A-Z') {
+const order = (arr, typeOfOrder) => {
+  if (typeOfOrder === 'nameAsc') {
     const ordenado = arr.sort((propiedad1, propiedad2) => {
       if (propiedad1.name > propiedad2.name) {
         return +1;
@@ -89,7 +89,7 @@ const orderAZ = (arr, typeOfOrder) => {
       return 0;
     });
     return ordenado;
-  } else if (typeOfOrder === 'Z-A') {
+  } else if (typeOfOrder === 'nameDesc') {
     const ordenado = arr.sort((propiedad1, propiedad2) => {
       if (propiedad1.name > propiedad2.name) {
         return -1;
@@ -103,20 +103,6 @@ const orderAZ = (arr, typeOfOrder) => {
   }
 };
 
-// const orderZA = (arr) => {
-//   const ordenado = arr.sort((propiedad1, propiedad2) => {
-//     if (propiedad1.name > propiedad2.name) {
-//       return -1;
-//     }
-//     if (propiedad1.name < propiedad2.name) {
-//       return +1;
-//     }
-//     return 0;
-//   });
-//   return ordenado;
-// };
-
-
 window.pokemon = {
   getDataMainOfPokemon,
   searchByName,
@@ -126,8 +112,7 @@ window.pokemon = {
   getAverageWeight,
   getAverageHeight,
   calculateQuantityByType,
-  orderAZ,
-  // orderZA
+  order,
 };
  
  
