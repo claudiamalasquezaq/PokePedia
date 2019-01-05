@@ -110,7 +110,7 @@ btnReturn1.addEventListener('click', () => {
 const buttonOrderBy = document.getElementById('selectOrder');
 
 buttonOrderBy.addEventListener('click', () => {
-  const selectOrder = document.getElementById('selectOrder').value;
+  const selectOrder = document.getElementById('selectOrder').name;
   const ordenando = pokemon.orderAZ(dataMainPokemon, selectOrder);
   paintPokemones(ordenando);
 });
