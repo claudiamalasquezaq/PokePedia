@@ -16,12 +16,14 @@
     <header class="header">
       <div class="conteiner-header">
         <h1 class="logo col-lg-10 col-xs-10">PokePedia</h1>
-        <input type="checkbox" id="menu-bar" />
+        <input type="checkbox" id="menu-bar"/>
         <label for="menu-bar" class="icon-menu col-xl-2 col-lg-2 col-xs-2"></label>
         <nav class="menu">
-          <a href="#">Home</a>
-          <a href="#">What is PokePedia?</a>
-          <a href="#">Contact</a>
+          <ul>
+         <li><a href="#">Home</a></li>
+          <li><a href="#">What is PokePedia?</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
         </nav>
       </div>
     </header>
@@ -48,7 +50,17 @@
           </div>
         </div>
         <div id="list-pokemon" class="containerdivs">
+        <select name="selectOrder" id="selectOrder" class="select2">
+          <option value="noSort">Order by...</option>
+          <option value="nameAsc">A-Z</option>
+          <option value="nameDesc">Z-A</option>
+        </select>
+        <!-- <h7 id="nameOfType"></h7> -->
+        <div id="list-pokemon" class="containerdivs center-items">
           <!--lista de pokemones-->
+        </div>
+        <div  class="btn-return center-items">
+          <button id="btnReturn">RETURN</button> 
         </div>
       </div>
     </main>

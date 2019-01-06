@@ -37,6 +37,7 @@ h1 {
 }
 
 .logo {
+	margin-right: 50px;
 	padding-top: 16px;
 	font-family: pokemon;
 }
@@ -73,6 +74,44 @@ ocupe todo
 
 h2 {
 	font-family: 'Paprika',cursive;
+}
+
+h4 {
+	font-family: Patrick Hand SC;
+	font-size: 28px;
+}
+
+.select2 {
+    background-color: #313131;
+	border: none;
+	padding: 9px;
+	margin: 15px;
+    border-radius: 7px;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Paprika',cursive;
+}
+
+option {
+	background-color: #313131;
+	font-family: 'Paprika',cursive;
+    color: #fff;
+}
+
+#btnReturn {
+	margin: 10px;
+	padding: 10px;
+	display: none;
+	text-align: center;
+	background: #8cc43c;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#nameOfType {
+font-size: 30px;
+padding: 18px;
 }
 
 .pokemon-name {
