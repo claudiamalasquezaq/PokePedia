@@ -83,25 +83,14 @@ const order = (arr, typeOfOrder) => {
       if (propiedad1.name > propiedad2.name) {
         return +1;
       }
-      if (propiedad1.name < propiedad2.name) {
-        return -1;
-      }
-      return 0;
     });
     return ordenado;
-  } else if (typeOfOrder === 'nameDesc') {
-    const ordenado = arr.sort((propiedad1, propiedad2) => {
-      if (propiedad1.name > propiedad2.name) {
-        return -1;
-      }
-      if (propiedad1.name < propiedad2.name) {
-        return +1;
-      }
-      return 0;
-    });
-    return ordenado;
-  }
-};
+  } else if(typeOfOrder === 'nameDesc') {
+    const ordenado = arr.sort(() => {
+             return ordenado;
+      });
+    }
+  };
 
 window.pokemon = {
   getDataMainOfPokemon,
@@ -114,5 +103,3 @@ window.pokemon = {
   calculateQuantityByType,
   order,
 };
- 
- 
