@@ -78,20 +78,43 @@ const calculateQuantityByType = (arr, type) => {
   return newArr;
 };
 
+// const order = (arr, typeOfOrder) => {
+//   if (typeOfOrder === 'nameAsc') {
+//     const ordenado = arr.sort((propiedad1, propiedad2) => {
+//       if (propiedad1.name > propiedad2.name) {
+//         return +1;
+//       }
+//     });
+//     return ordenado;
+//   } else {
+//     const ordenado = arr.sort((propiedad1,propiedad2) => {
+//       if (propiedad1.name < propiedad2.name) {
+//         return +1;
+//       }
+//     });
+//     return ordenado;
+//   }
+// };
+
 const order = (arr, typeOfOrder) => {
   if (typeOfOrder === 'nameAsc') {
     const ordenado = arr.sort((propiedad1, propiedad2) => {
       if (propiedad1.name > propiedad2.name) {
         return +1;
+      } else {
+        return -1;
       }
     });
     return ordenado;
-  } else if(typeOfOrder === 'nameDesc') {
-    const ordenado = arr.sort(() => {
-             return ordenado;
-      });
-    }
-  };
+  } else {
+    const ordenado = arr.sort((propiedad1, propiedad2) => {	      
+      if (propiedad1.name < propiedad2.name) {
+        return +1;
+      }
+    });
+    return ordenado;
+  }
+};
 
 window.pokemon = {
   getDataMainOfPokemon,

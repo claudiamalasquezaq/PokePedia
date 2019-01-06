@@ -1,4 +1,7 @@
-    #menu-bar {
+header {
+    padding: 0 15px;
+}
+#menu-bar {
             display: none;
         }
         
@@ -20,7 +23,7 @@
         height: 100vh;
         background: rgb(51, 51, 51,0.9);
         transition: all 0.5s;
-        transform: translateX(-100%);
+        transform: translateX(-110%);
         }
         
         .menu a {

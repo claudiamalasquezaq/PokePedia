@@ -13,7 +13,6 @@
 header {
 	width: 100%;
 	height: 70px;	
-	/* background: #e46c7c; */
 	background-color: #FFDE00;
 	color: #f2f2f2;
 	/*ocupe todo*/
@@ -45,7 +44,6 @@ h1 {
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
-	/* background: #f2f2f2; */
 	background: url('http://www.hdfondos.eu/pictures/2012/0221/1/pokemon-fields-ruby-1920x1200-wallpaper-507673.jpg') no-repeat center center fixed;
 	   -webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -63,14 +61,7 @@ body {
 
 .main {
 	padding-top: 5rem;
-	/* width: 100%;
-    height: 70px;
-ocupe todo
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100; 
-}*/}
+	}
 
 h2 {
 	font-family: 'Paprika',cursive;
@@ -154,10 +145,6 @@ cursor: pointer;
 	font-family: 'Paprika',cursive;
 	background: #3B4CCA;
 	color: #fff;
-}
-
-.aligne {
-	display: inline;
 }
 
 .select {
