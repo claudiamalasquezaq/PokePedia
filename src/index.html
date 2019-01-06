@@ -14,7 +14,7 @@
  </head>
   <body>
     <header class="header">
-      <div class="contenedor">
+      <div class="conteiner-header">
         <h1 class="logo col-lg-10 col-xs-10">PokePedia</h1>
         <input type="checkbox" id="menu-bar"/>
         <label for="menu-bar" class="icon-menu col-xl-2 col-lg-2 col-xs-2"></label>
@@ -30,7 +30,7 @@
     <main class="main center-items"> 
       <div class="container">
         <h2>WELCOME TO THE POKEMON WORLD</h2>
-             <div class="sectionOfToolbar">
+        <div class="sectionOfToolbar">
           <p>Enter the name of the Pokémon</p>
           <input type="text" id="pokemon-name" class="toolbar-search"/>
           <button id="btn-search" class="icon-search button-search"></button>
@@ -40,11 +40,16 @@
         <div id ="types" class="unseen aligne">
           <p class="p-types">Types:</p>
           <select name="paint-types" id="paint-types" class="select">
-              <!-- evento en index.html onChange="ShowSelected()" -->
             <!--select con tipos de Pokémon-->
           </select>
           <button id="btn-search-types" class="search-select">Search</button>
+          <p id="result-found" class="aligne"></p>
+          <div>
+            <p id="avg-weight" class="aligne"></p>
+            <p id="avg-height" class="aligne"></p>
+          </div>
         </div>
+        <div id="list-pokemon" class="containerdivs">
         <select name="selectOrder" id="selectOrder" class="select2">
           <option value="noSort">Order by...</option>
           <option value="nameAsc">A-Z</option>

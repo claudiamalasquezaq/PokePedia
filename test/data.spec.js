@@ -153,7 +153,7 @@ describe('pokemon.getAverageWeigth', () => {
     expect(typeof pokemon.getAverageWeight).toBe('function');
   });
   it('debería retornar el promedio del peso de los Pokémon tipo "Poison"', () => {
-    expect(pokemon.getAverageWeight(input, 'Poison')).toEqual(39.96666666666667);
+    expect(pokemon.getAverageWeight(input, 'Poison')).toEqual(39.97);
   });
 });
 
@@ -162,7 +162,7 @@ describe('pokemon.getAverageHeight', () => {
     expect(typeof pokemon.getAverageHeight).toBe('function');
   });
   it('debería retornar el promedio del peso de los Pokémon tipo "Poison"', () => {
-    expect(pokemon.getAverageHeight(input, 'Poison')).toEqual(1.2366666666666666);
+    expect(pokemon.getAverageHeight(input, 'Poison')).toEqual(1.24);
   });
 });
 
