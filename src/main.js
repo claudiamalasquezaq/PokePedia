@@ -105,9 +105,9 @@ btnSearchTypes.addEventListener('click', () => {
 });
 
 // Botón ordenar 
-const buttonOrderBy = document.getElementById('selectOrder');
+const btnOrderBy = document.getElementById('selectOrder');
 
-buttonOrderBy.addEventListener('click', () => {
+btnOrderBy.addEventListener('click', () => {
   const selectOrder = document.getElementById('selectOrder').value;
   const ordenando = pokemon.order(dataMainPokemon, selectOrder);
   paintPokemones(ordenando);
