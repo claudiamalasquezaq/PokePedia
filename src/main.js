@@ -103,9 +103,17 @@ btnSearchTypes.addEventListener('click', () => {
   const paintTypes = document.getElementById('paint-types').value;
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
   paintPokemones(filter);
-  resultFound.innerHTML = pokemon.calculateQuantityByType(dataMainPokemon, paintTypes) + ' result found';
-  avgWeight.innerHTML = 'Average weight: ' + pokemon.getAverageWeight(dataMainPokemon, paintTypes);
-  avgHeight.innerHTML = 'Average height: ' + pokemon.getAverageHeight(dataMainPokemon, paintTypes);
+  const result = resultFound.innerHTML = pokemon.calculateQuantityByType(dataMainPokemon, paintTypes) + ' result found';
+  const weight = avgWeight.innerHTML = 'Average weight: ' + pokemon.getAverageWeight(dataMainPokemon, paintTypes);
+  const height = avgHeight.innerHTML = 'Average height: ' + pokemon.getAverageHeight(dataMainPokemon, paintTypes);
+  const card = ` 
+<div>
+ <h4 class="result"> ${result} </h4>
+ <h5 class="weight"> ${weight} </h4>
+ <h6 class= "height"> ${height} </h4>
+ </div>
+ `;
+  return card;
 });
 
 btnReturn1.addEventListener('click', () => {

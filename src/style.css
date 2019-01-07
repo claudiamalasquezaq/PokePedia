@@ -67,10 +67,12 @@ h2 {
 	font-family: 'Paprika',cursive;
 }
 
-h4 {
-	font-family: Patrick Hand SC;
-	font-size: 28px;
+.height {
+	margin-top: 10px;
+	float: left;
+	font-family: 'Paprika',cursive;
 }
+
 
 .select2 {
     background-color: #313131;
