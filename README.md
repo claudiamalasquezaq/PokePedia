@@ -3,7 +3,7 @@
 ## ELECCIÓN DE LA DATA Y EL USUARIO
 1. _La data escogida_ fue la de Pokemón ya que es una data amigable, la cual tiene un amplio público haciendolo así popular y con un mayor campo por explorar.
 2. _El usuario_: Se analizó y se priorizo resolver las problemáticas para las personas que eran fanáticos de la serie, ya que así no se tendría un sector reducido(usuarios de PokemonGo).
-3. _Las expectavivas_: Sse esperaba poder tener un amplio público además de accesible para poder definir el producto a desarrollar, nos basamos en las **entrevistas** a público con conocomiento previo a la serie Pokemón (fans en su mayoría), con los cuales se pudo sacar varias problemáticas existentes con respecto a esta.
+3. _Las expectavivas_: Se esperaba poder tener un amplio público además de accesible para poder definir el producto a desarrollar, nos basamos en las **entrevistas** a público con conocomiento previo a la serie Pokemón (fans en su mayoría), con los cuales se pudo sacar varias problemáticas existentes con respecto a esta.
 
 ### PROBLEMÁTICAS
 1. Los usuarios expresaban que existe una muy larga variedad de pokemones por lo cual era muy difícil recordar ciertas características de ellos.
@@ -59,6 +59,19 @@ El proceso de diseño tiene cinco fases relacionadas al usuario para satisfacer 
 
 - _Entrevistas_:  Las entrevistas fueron la base para empezar a realizar el producto ya que con ellas encontramos las **problemáticas** ya mencionadas, se definieron las **historias de usuario** y se planteó la resolución de problemas.
 
+A continuación un resumen de las conclusiones que se obtuvieron de los usuarios entrevistados:
+
+![user-1](https://i.ibb.co/1LhvjnF/user1.jpg)
+
+![user-2](https://i.ibb.co/sWGP8v8/user2.jpg)
+
+![user-3](https://i.ibb.co/SDjfFQM/user3.jpg)
+
+![user-4](https://i.ibb.co/CQdx21H/user4.jpg)
+
+![user-5](https://i.ibb.co/N1yB23K/user5.jpg)
+
+
 #### RESOLUCIÓN DE PROBLEMAS
  Se planteó implementar una aplicación en base a las necesidades del usuario.
  Una app:
@@ -73,7 +86,6 @@ El proceso de diseño tiene cinco fases relacionadas al usuario para satisfacer 
 
 ![Proceso de diseño 2](https://lh5.googleusercontent.com/nQIPFhjS7QtmjupPsDHE8hURMZRdowkuopqIsWMGYR6YCdNRd3eDlDHfz11NZ6MGCpG3iiVHx3ZY3gsutpaHz_aU0gPp-Ak2v224rR0VHUpEKbVjLB3UofCv521cEbA3P0yhr_Hc-8M)
 
-(User personas: http://jmbeas.es/guias/user-personas/) Se pueden hacer a partir de las entrevistas, colocar _nombre, edad, ocupación, hobbies, que opina sobre Pokemon, que le sería útil._
 
 En base a problemática.
 1. Barra de búsqueda
@@ -130,6 +142,7 @@ Además de mostrarles el prototipo de alta fidelidad, en las primeras historias 
 
 ## IMPLEMENTACIÓN DE LA INTERFAZ DE USUARIO (HTML/CSS/JS)
 
+
 ### Interfaz de Usuario de la HU01:
 
 ![IU-HU01-01](https://i.ibb.co/gzgHcVG/IU-HU1-Mostrar-Data.jpg)
@@ -138,6 +151,7 @@ _Iteración con usuarios:_
 El usuario no identificaba la aplicación como algo relacionado a Pokémon por los colores que se le había puesto, solo lo reconocía porque se mostraban los Pokémon.
 
 Lo que se hizo después de tener esa información del usuario, fue modificar el diseño para la siguiente historia de usuario.
+
 
 ### Interfaz de Usuario de la HU02:
 
@@ -150,15 +164,23 @@ Se mostró el prototipo al usuario, a pesar de tener un ícono de Pokémon y los
 
 Así que se agregó un fondo relacionado a Pokémon, además de mostrar dos Pokémon por fila y centrado.
 
+
 ### Interfaz de Usuario de la HU03:
 
 ![IU-HU03-01](https://i.ibb.co/xgdxcwh/IU-HU3-Filtrar-Por-Tipo.jpg)
 
 ![IU-HU03-02](https://i.ibb.co/VwvFPkT/IU-HU3-Filtrar-Por-Tipo-Run.jpg)
 
+
 ### Interfaz de Usuario de la HU04:
 
 ![IU-HU04-01](https://i.ibb.co/QKnHqNg/IU-HU4-Mostrar-Cantidad-Tipos-amp-Promedio-Talla-Peso-Run.jpg)
 
+
 ### Interfaz de Usuario de la HU05:
-![IU-HU05-01]()
+
+![IU-HU05-01](https://i.ibb.co/tbcnzHG/IU-HU05-Ordenar-Alfab.jpg)
+
+![IU-HU05-02](https://i.ibb.co/Pz47XZs/IU-HU05-Ordenar-Alfab-Run1.jpg)
+
+![IU-HU05-03](https://i.ibb.co/1Z9K4Vd/IU-HU05-Ordenar-Alfab-Run2.jpg)
