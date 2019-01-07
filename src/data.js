@@ -33,6 +33,7 @@ const uniqueTypes = (data) => {
   return acumType;
 };
 
+// Filtrado por tipo
 const filterForType = (arr, nameType) => {
   let arrFiltType = [];
   arr.filter((elem) => {
@@ -43,6 +44,7 @@ const filterForType = (arr, nameType) => {
   return arrFiltType;
 };
 
+// Promedio de peso
 const getAverageWeight = (arr, nameType) => {
   let newArr = [];
   const arrFilt = filterForType(arr, nameType);
@@ -57,6 +59,7 @@ const getAverageWeight = (arr, nameType) => {
   return Math.round(avgW * 100) / 100;
 };
 
+// Promedio de altura
 const getAverageHeight = (arr, nameType) => {
   let newArr = [];
   const arrFilt = filterForType(arr, nameType);
@@ -71,32 +74,33 @@ const getAverageHeight = (arr, nameType) => {
   return Math.round(avgH * 100) / 100;
 };
 
-
+// Calculando cantidad de pokemones por tipo
 const calculateQuantityByType = (arr, type) => {
   const filtrado = filterForType(arr, type);
   const newArr = filtrado.length;
   return newArr;
 };
 
+// Ordenando por A-Z y Z-A
 const order = (arr, typeOfOrder) => {
   if (typeOfOrder === 'nameAsc') {
-    const ordenado = arr.sort((propiedad1, propiedad2) => {
-      if (propiedad1.name > propiedad2.name) {
+    const ordered = arr.sort((property1, property2) => {
+      if (property1.name > property2.name) {
         return +1;
       } else {
         return -1;
       }
     });
-    return ordenado;
+    return ordered;
   } else if (typeOfOrder === 'nameDesc') {
-    const ordenado = arr.sort((propiedad1, propiedad2) => {
-      if (propiedad1.name > propiedad2.name) {
+    const ordered = arr.sort((property1, property2) => {
+      if (property1.name > property2.name) {
         return -1;
       } else {
         return +1;
       }
     });
-    return ordenado;
+    return ordered;
   }
 };
 
