@@ -12,7 +12,6 @@
   "dependencies": {
     "eslint": "^5.9.0",
     "eslint-plugin-jest": "^22.1.2",
-    "htmlhint": "^0.10.1",
     "jest": "^23.6.0",
     "mocha": "^5.2.0"
   },
@@ -20,7 +19,9 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "htmlhint": "^0.10.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MirellaLucero/lim-2018-11-bc-core-am-data-lovers.git"
