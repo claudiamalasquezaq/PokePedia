@@ -109,6 +109,6 @@ const btnOrderBy = document.getElementById('selectOrder');
 
 btnOrderBy.addEventListener('click', () => {
   const selectOrder = document.getElementById('selectOrder').value;
-  const ordenando = pokemon.order(dataMainPokemon, selectOrder);
-  paintPokemones(ordenando);
+  const ordered = pokemon.order(dataMainPokemon, selectOrder);
+  paintPokemones(ordered);
 });
