@@ -50,8 +50,8 @@ const getAverageWeight = (arr, nameType) => {
     newArr.push(parseFloat(elem.weight));
   });
   const sizeArr = newArr.length;
-  const total = newArr.reduce((cont, tip) => {
-    return cont + tip;
+  const total = newArr.reduce((counter, number) => {
+    return counter + number;
   });
   const avgW = total / sizeArr;
   return Math.round(avgW * 100) / 100;
@@ -64,8 +64,8 @@ const getAverageHeight = (arr, nameType) => {
     newArr.push(parseFloat(elem.height));
   });
   const sizeArr = newArr.length;
-  const total = newArr.reduce((cont, tip) => {
-    return cont + tip;
+  const total = newArr.reduce((counter, number) => {
+    return counter + number;
   });
   const avgH = total / sizeArr;
   return Math.round(avgH * 100) / 100;
@@ -80,23 +80,23 @@ const calculateQuantityByType = (arr, type) => {
 
 const order = (arr, typeOfOrder) => {
   if (typeOfOrder === 'nameAsc') {
-    const ordenado = arr.sort((propiedad1, propiedad2) => {
-      if (propiedad1.name > propiedad2.name) {
+    const ordered = arr.sort((property1, property2) => {
+      if (property1.name > property2.name) {
         return +1;
       } else {
         return -1;
       }
     });
-    return ordenado;
+    return ordered;
   } else if (typeOfOrder === 'nameDesc') {
-    const ordenado = arr.sort((propiedad1, propiedad2) => {
-      if (propiedad1.name > propiedad2.name) {
+    const ordered = arr.sort((property1, property2) => {
+      if (property1.name > property2.name) {
         return -1;
       } else {
         return +1;
       }
     });
-    return ordenado;
+    return ordered;
   }
 };
 
