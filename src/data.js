@@ -116,3 +116,16 @@ window.pokemon = {
   calculateQuantityByType,
   order,
 };
+
+
+window.pokemon = {
+  getDataMainOfPokemon,
+  searchByName,
+  getTypes,
+  uniqueTypes,
+  filterForType,
+  getAverageWeight,
+  getAverageHeight,
+  calculateQuantityByType,
+  order,
+};

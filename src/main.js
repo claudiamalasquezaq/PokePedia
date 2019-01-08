@@ -98,7 +98,6 @@ btnReturn.addEventListener('click', () => {
 const resultFound = document.getElementById('result-found');
 const avgWeight = document.getElementById('avg-weight');
 const avgHeight = document.getElementById('avg-height');
-
 const btnSearchTypes = document.getElementById('btn-search-types');
 
 // Botón para que se muestre cuantos se encontraron, promedio de peso y talla H4
