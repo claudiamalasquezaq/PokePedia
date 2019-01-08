@@ -107,8 +107,8 @@ btnSearchTypes.addEventListener('click', () => {
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
   paintPokemones(filter);
   resultFound.innerHTML = pokemon.calculateQuantityByType(dataMainPokemon, paintTypes) + ' result found';
-  avgWeight.innerHTML = 'Average weight: ' + pokemon.getAverageWeight(dataMainPokemon, paintTypes);
-  avgHeight.innerHTML = 'Average height: ' + pokemon.getAverageHeight(dataMainPokemon, paintTypes);
+  avgWeight.innerHTML = 'Average weight: ' + pokemon.getAverage(dataMainPokemon, paintTypes, 'weight') + ' kg';
+  avgHeight.innerHTML = 'Average height: ' + pokemon.getAverage(dataMainPokemon, paintTypes, 'height') + ' m';
 });
 
 // Select para ordenar H05
