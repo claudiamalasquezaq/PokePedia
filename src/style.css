@@ -178,14 +178,16 @@ cursor: pointer;
 	margin: 5px 5px;
 	padding: 10px;
 	font-style: italic;
-	color: black;
+	color: #071675;
 	font-family: 'Acme',sans-serif;
+	font-size: 22px;
 }
 
 #avg-weight, #avg-height {
 	margin: 20px 20px;
-	color: black;
+	color: #071675;
 	font-family: 'Acme',sans-serif;
+	font-size: 20px;
 }
 
 /* Clase para que se oculte el div */
