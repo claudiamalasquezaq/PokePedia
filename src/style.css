@@ -98,7 +98,8 @@ option {
 	display: none;
 	text-align: center;
 	font-weight: bold;
-	background: #3B4CCA;
+	/* background: #3B4CCA; */
+	background: #333;
     color: #fff;
 	border-radius: 7px;
     cursor: pointer;
