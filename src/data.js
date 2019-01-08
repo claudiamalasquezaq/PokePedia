@@ -52,8 +52,8 @@ const getAverageWeight = (arr, nameType) => {
     newArr.push(parseFloat(elem.weight));
   });
   const sizeArr = newArr.length;
-  const total = newArr.reduce((cont, tip) => {
-    return cont + tip;
+  const total = newArr.reduce((counter, number) => {
+    return counter + number;
   });
   const avgW = total / sizeArr;
   return Math.round(avgW * 100) / 100;
@@ -67,8 +67,8 @@ const getAverageHeight = (arr, nameType) => {
     newArr.push(parseFloat(elem.height));
   });
   const sizeArr = newArr.length;
-  const total = newArr.reduce((cont, tip) => {
-    return cont + tip;
+  const total = newArr.reduce((counter, number) => {
+    return counter + number;
   });
   const avgH = total / sizeArr;
   return Math.round(avgH * 100) / 100;
@@ -102,6 +102,19 @@ const order = (arr, typeOfOrder) => {
     });
     return ordered;
   }
+};
+
+
+window.pokemon = {
+  getDataMainOfPokemon,
+  searchByName,
+  getTypes,
+  uniqueTypes,
+  filterForType,
+  getAverageWeight,
+  getAverageHeight,
+  calculateQuantityByType,
+  order,
 };
 
 
