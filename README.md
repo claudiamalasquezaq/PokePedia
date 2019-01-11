@@ -184,3 +184,34 @@ Así que se agregó un fondo relacionado a Pokémon, además de mostrar dos Pok�
 ![IU-HU05-02](https://i.ibb.co/Pz47XZs/IU-HU05-Ordenar-Alfab-Run1.jpg)
 
 ![IU-HU05-03](https://i.ibb.co/1Z9K4Vd/IU-HU05-Ordenar-Alfab-Run2.jpg)
+
+
+___
+
+
+## TRABAJO EN EQUIPO
+
+Al empezar el proyecto, empezamos definiendo las historias de usuario, pusimos tareas generales en nuestro tablero, pero no fue de mucha ayuda.
+
+Para la siguiente historia, definimos un orden de trabajo, iba a ser la siguiente:
+
+1. Primero crear los tests en `data.spec.js` de las funciones que queriamos que funcionen.
+    - Para cada función, debía retornar que era una función.
+    - Y además, que funcione correctamente, llamando a la función con sus argumentos.  Para eso, creamos inputs y outpus de ideal que quería que retorne.
+
+2. Investigar sobre cuáles eran los métodos que podíamos usar para crear la función.
+
+3. Hacer pruebas en la consola de la aplicación, hasta llegar a que la función ya esté implementada.
+
+4. Implementar la función en nuestro archivo `data.js`.
+
+5. Pasar los tests de esa función.
+
+6. Una vez que pasó el test de funcionalidad, se implementa en el archivo `main.js` para que se muestre en la interfaz de usuario (IU)
+
+Trabajar de esa manera nos ayudó a tener claro que funciones eran las que queriamos implementar.
+
+En nuestro tablero, por cada historia de usuario, dividimos las tareas por colores:
+- El naranja era todo lo que se tenía que crear con javaScript (funciones, tests)
+- El azul era lo que se implementaba en el html
+- El rosado era el diseño que se debía hacer de acuerdo al prototipo de alta fidelidad.
