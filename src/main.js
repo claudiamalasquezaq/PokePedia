@@ -5,38 +5,35 @@ const dataMainPokemon = pokemon.getDataMainOfPokemon(POKEMON.pokemon);
 const divPokemon = document.getElementById('list-pokemon');
 
 // Pintando pokemones en HTML(Historia de usuario #01)
-const paintPokemones = (arr) => {
-  let listOfPokemones = '';
+const paintPokemons = (arr) => {
+  let listOfPokemons = '';
   // Recorrer el dataMain con forEach
-  arr.forEach((pokemones) => {
+  arr.forEach((pokemon) => {
   // Almacenando en una const lo que se implementará al HTML
     const card = `
-      <div class="card-link col-xl-2 col-lg-2 col-xs-10">
+      <div class="card-link col-lg-3 col-md-3 col-sm-10 col-xs-10">
         <article class="blog-card">
           <div class="center-items">
-            <img class="pokemon-image" src="${ pokemones.img }" />
+            <img class="pokemon-image" src="${ pokemon.img }" />
           </div>
           <div class="article-details">
-            <h3 class="pokemon-name">${ pokemones.name }</h3>
-            <p class="pokemon-type">Type: ${ pokemones.type }</p>
-            <p class="pokemon-height">Height: ${ pokemones.height }</p>
-            <p class="pokemon-weight">Weight: ${ pokemones.weight }</p>
-            <p class="pokemon-weaknesses">Weaknesses: ${ pokemones.weaknesses }</p>
+            <h3 class="pokemon-name">${ pokemon.name }</h3>
+            <p class="pokemon-type">Type: ${ pokemon.type }</p>
+            <p class="pokemon-height">Height: ${ pokemon.height }</p>
+            <p class="pokemon-weight">Weight: ${ pokemon.weight }</p>
+            <p class="pokemon-weaknesses">Weaknesses: ${ pokemon.weaknesses }</p>
           </div>
         </article>
       </div>
     `;
     // Concatenando info
-    listOfPokemones += card;
+    listOfPokemons += card;
   });
   // Pintando en el html
-  divPokemon.innerHTML = listOfPokemones;
+  divPokemon.innerHTML = listOfPokemons;
 };
 
-paintPokemones(dataMainPokemon);
-
-// Guardando el id del select
-const selectTypes = document.getElementById('paint-types');
+paintPokemons(dataMainPokemon);
 
 // Botón de búsqueda H02
 const btnSearch = document.getElementById('btn-search');
@@ -51,7 +48,7 @@ btnSearch.addEventListener('click', () => {
   } else {
     const searched = pokemon.searchByName(dataMainPokemon, pokemonName);
     document.getElementById('warning').innerHTML = '';
-    paintPokemones(searched);
+    paintPokemons(searched);
   }
 });
 
@@ -64,6 +61,7 @@ btnSearchAdv.addEventListener('click', () => {
   const types = document.getElementById('types');
   types.classList.remove('unseen');
   types.classList.remove('show');
+  btnSearchAdv.innerHTML = 'Double click to return';
 });
 
 btnSearchAdv.addEventListener('dblclick', () => {
@@ -72,10 +70,13 @@ btnSearchAdv.addEventListener('dblclick', () => {
   location.reload();
 });
 
-// Pintando los tipos en el select H03
+// Guardando el id del select
+const selectTypes = document.getElementById('paint-types');
+
+// Pintando los tipos en el select
 const paintTypesInSelect = (arr) => {
   let typesOfPokemon = '';
-  const types = pokemon.uniqueTypes(arr);
+  const types = pokemon.getUniqueTypes(arr);
   for (let i = 0; i < types.length; i++) {
     const select = `
     <option value="${types[i]}">${types[i]}</option>
@@ -98,14 +99,13 @@ btnReturn.addEventListener('click', () => {
 const resultFound = document.getElementById('result-found');
 const avgWeight = document.getElementById('avg-weight');
 const avgHeight = document.getElementById('avg-height');
-const btnSearchTypes = document.getElementById('btn-search-types');
 
 // Botón para que se muestre cuantos se encontraron, promedio de peso y talla H4
-btnSearchTypes.addEventListener('click', () => {
+selectTypes.addEventListener('change', () => {
   document.getElementById('btn-return').style.display = 'block';
   const paintTypes = document.getElementById('paint-types').value;
   const filter = pokemon.filterForType(dataMainPokemon, paintTypes);
-  paintPokemones(filter);
+  paintPokemons(filter);
   resultFound.innerHTML = pokemon.calculateQuantityByType(dataMainPokemon, paintTypes) + ' result found';
   avgWeight.innerHTML = 'Average weight: ' + pokemon.getAverage(dataMainPokemon, paintTypes, 'weight') + ' kg';
   avgHeight.innerHTML = 'Average height: ' + pokemon.getAverage(dataMainPokemon, paintTypes, 'height') + ' m';
@@ -117,5 +117,5 @@ const selectOrder = document.getElementById('select-order');
 selectOrder.addEventListener('change', () => {
   const valueSelect = document.getElementById('select-order').value;
   const ordered = pokemon.order(dataMainPokemon, valueSelect);
-  paintPokemones(ordered);
+  paintPokemons(ordered);
 });
