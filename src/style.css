@@ -10,37 +10,6 @@
     box-sizing: border-box;
 }
 
-header {
-	width: 100%;
-	height: 70px;	
-	background-color: #FFDE00;
-	color: #f2f2f2;
-	/*ocupe todo*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-
-.conteiner-header {
-	position: relative;
-	margin: auto;
- 	width: 100%;
-	height: auto;
-	display: table;
-}
-
-h1 {
-	float: left;
-	color: #3B4CCA;
-}
-
-.logo {
-	margin-right: 50px;
-	padding-top: 16px;
-	font-family: pokemon;
-}
-
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #666;
@@ -53,30 +22,146 @@ body {
 	padding: 0;
 }
 
+header {
+	width: 100%;
+	height: 70px;	
+	background-color: #FFDE00;
+	color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+	z-index: 100;
+	display: flex;
+	padding: 0 15px;
+}
+
+h1 {
+	float: left;
+	color: #3B4CCA;
+}
+
+h2 {
+	font-family: 'Paprika',cursive;
+	margin: 20px;
+}
+
+.main {
+	padding-top: 5rem;
+}
+
+.footer {
+	background: gray;
+	padding: 15px;
+	text-align: center;
+	color: white;
+}
+
+option {
+	background-color: #313131;
+	font-family: 'Paprika',cursive;
+    color: #fff;
+}
+
+.container-header {
+	position: relative;
+	margin: auto;
+ 	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.logo {
+	margin-right: 50px;
+	padding-top: 16px;
+	font-family: pokemon;
+	box-sizing: border-box;
+}
+
+.center-items {
+	text-align: center;
+}
+
 .container {
 	width: 85%;
 	max-width: 850px;
 	margin: 0 auto;
 }
 
-.main {
-	padding-top: 5rem;
-	}
-
-h2 {
-	font-family: 'Paprika',cursive;
-	margin: 20px;
-	font-size: 40px;
+.section-of-toolbar {
+	padding: 18px;
+	display: inline-block;
 }
 
-.height {
-	margin-top: 10px;
-	float: left;
+.toolbar-search {
+	border-radius: 20px;
+	border: none;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	align-items: center;
+}
+
+.button-search {
+	width: 30px; 
+	height: 30px;
+	background: #8cc43c;
+	color: #fff;
+	border-radius: 7px;
+	border: none;
+	cursor: pointer;
+}
+
+.p-warning {
+	color: red;
+}
+
+.button-search-adv {
+	padding: 9px;
+	margin: 15px;
+	cursor: pointer;
+	border: none;
+	border-radius: 7px;
+	font-family: 'Paprika',cursive;
+	background: #3B4CCA;
+	color: #fff;
+}
+
+.unseen {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.p-types {
+	padding: 8px;
 	font-family: 'Paprika',cursive;
 }
 
+.select-types {
+	padding: 5px;
+	font-family: 'Paprika',cursive;
+}
 
-.select2 {
+.property-text {
+	color: #071675;
+	font-family: 'Acme',sans-serif;
+}
+
+.p-result {
+	margin: 5px 5px;
+	padding: 10px;
+	font-style: italic;
+	font-size: 22px;
+}
+
+.p-avg {
+	margin: 20px 20px;
+	font-size: 20px;
+}
+
+.select-order {
     background-color: #313131;
 	border: none;
 	padding: 9px;
@@ -87,124 +172,14 @@ h2 {
 	font-family: 'Paprika',cursive;
 }
 
-option {
-	background-color: #313131;
-	font-family: 'Paprika',cursive;
-    color: #fff;
-}
-
-#btn-return {
+.button-return {
 	margin: 10px;
 	padding: 10px;
 	display: none;
 	text-align: center;
 	font-weight: bold;
-	/* background: #3B4CCA; */
 	background: #333;
     color: #fff;
 	border-radius: 7px;
     cursor: pointer;
-}
-
-#nameOfType {
-font-size: 30px;
-padding: 18px;
-}
-
-.pokemon-name {
-	text-transform: uppercase;
-}
-
-#warning {
-	color: red;
-}
-
-.section-of-toolbar {
-	padding: 18px;
-	display: inline-block;
-}
-
-.toolbar-search {
-   border-radius: 20px;
-   border: none;
-   width: 200px;
-   height: 30px;
-   text-align: center;
-   align-items: center;
-
-}
-
-.button-search {
-width: 30px; 
-height: 30px;
-background: #8cc43c;
-color: #fff;
-border-radius: 7px;
-border: none;
-cursor: pointer;
-}
-
-#btn-search-adv {
-	padding: 9px;
-	margin: 15px;
-	cursor: pointer;
-	border: none;
-	border-radius: 7px;
-	font-family: 'Paprika',cursive;
-	background: #3B4CCA;
-	color: #fff;
-}
-
-.select {
-	padding: 5px;
-	font-family: 'Paprika',cursive;
-}
-
-.search-select {
-	padding: 7px;
-	border-radius: 5px;
-	border: 1px;
-	font-family: 'Paprika',cursive;
-	cursor: pointer;
-	background: #3B4CCA;
-	color: #fff;	
-}
-
-.p-types {
-	padding: 8px;
-	font-family: 'Paprika',cursive;
-}
-
-#result-found {
-	margin: 5px 5px;
-	padding: 10px;
-	font-style: italic;
-	color: #071675;
-	font-family: 'Acme',sans-serif;
-	font-size: 22px;
-}
-
-#avg-weight, #avg-height {
-	margin: 20px 20px;
-	color: #071675;
-	font-family: 'Acme',sans-serif;
-	font-size: 20px;
-}
-
-/* Clase para que se oculte el div */
-.unseen {
-	display: none;
-}
-
-/* Clase para que se muestre el div */
-.show {
-	display: block;
-}
-
-.footer {
-	background: gray;
-	padding: 15px;
-	text-align: center;
-	color: white;
-	/* clear: left; */
 }
