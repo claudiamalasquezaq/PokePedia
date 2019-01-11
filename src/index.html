@@ -13,16 +13,16 @@
  </head>
   <body>
     <header class="header">
-      <div class="conteiner-header">
-        <h1 class="logo col-lg-10 col-xs-10">PokePedia</h1>
-        <input type="checkbox" id="menu-bar"/>
-        <label for="menu-bar" class="icon-menu col-lg-2 col-xs-2"></label>
+      <div class="container-header">
+        <h1 class="logo col-lg-11 col-md-11 col-sm-10 col-xs-10">PokePedia</h1>
+        <input type="checkbox" id="menu-bar" class="menu-input"/>
+        <label for="menu-bar" class="icon-menu col-lg-1 col-md-1 col-sm-2 col-xs-2"></label>
         <nav class="menu">
           <ul>
-         <li><a href="#">Home</a></li>
-          <li><a href="#">What is PokePedia?</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">What is PokePedia?</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -33,22 +33,21 @@
           <p>Enter the name of the Pokémon</p>
           <input type="text" id="pokemon-name" class="toolbar-search"/>
           <button id="btn-search" class="icon-search button-search"></button>
-          <p id="warning"></p>
+          <p id="warning" class="p-warning"></p>
         </div>
-        <button id="btn-search-adv">Advanced search</button>
-        <div id ="types" class="unseen aligne">
+        <button id="btn-search-adv" class="button-search-adv">Advanced search</button>
+        <div id ="types" class="unseen">
           <p class="p-types">Types:</p>
-          <select name="paint-types" id="paint-types" class="select">
+          <select name="paint-types" id="paint-types" class="select-types">
             <!--select con tipos de Pokémon-->
           </select>
-          <button id="btn-search-types" class="search-select">Search</button>
-          <p id="result-found"></p>
+          <p id="result-found" class="p-result property-text"></p>
           <div>
-            <p id="avg-weight"></p>
-            <p id="avg-height"></p>
+            <p id="avg-weight" class="p-avg property-text"></p>
+            <p id="avg-height" class="p-avg property-text"></p>
           </div>
         </div>
-        <select name="selectOrder" id="select-order" class="select2">
+        <select name="selectOrder" id="select-order" class="select-order">
           <option value="not-sort">Order by...</option>
           <option value="nameAsc">A-Z</option>
           <option value="nameDesc">Z-A</option>
@@ -56,9 +55,7 @@
         <div id="list-pokemon" class="container-divs center-items">
           <!--lista de pokemones-->
         </div>
-        <!-- <div class="center-items"> -->
-          <button id="btn-return" class=" center-items">RETURN</button> 
-        <!-- </div> -->
+        <button id="btn-return" class="button-return center-items">RETURN</button> 
       </div>
     </main>
     <footer class="footer">
