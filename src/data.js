@@ -13,18 +13,14 @@ const searchByName = (arr, name) => {
   return getPokemon;
 };
   
-// Obtener un arreglo con todos los tipos de Pokémon incluye repetidos H03
-const getTypes = (data) => {
+/* Obtener un array con todos los tipos de Pokémon y luego hallar los tipos únicos
+para que se agreguen al select */
+const getUniqueTypes = (data) => {
   let arrTypes = [];
   data.forEach(obj => {
     arrTypes = arrTypes.concat(obj.type);
   });
-  return arrTypes;
-};
-
-// Obteniendo tipos únicos H03 para el select
-const uniqueTypes = (data) => {
-  const accumType = getTypes(data).reduce((accum, elem) => {
+  const accumType = arrTypes.reduce((accum, elem) => {
     if (elem !== '' && accum.indexOf(elem) === -1) {
       accum.push(elem);
     }
@@ -33,7 +29,7 @@ const uniqueTypes = (data) => {
   return accumType;
 };
 
-// Filtrado por tipo
+// Filtrado por tipo HU03
 const filterForType = (arr, nameType) => {
   let arrFiltType = [];
   arr.filter((elem) => {
@@ -90,8 +86,7 @@ const order = (data, typeOfOrder) => {
 window.pokemon = {
   getDataMainOfPokemon,
   searchByName,
-  getTypes,
-  uniqueTypes,
+  getUniqueTypes,
   filterForType,
   getAverage,
   calculateQuantityByType,
