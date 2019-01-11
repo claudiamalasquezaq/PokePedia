@@ -45,9 +45,7 @@ const outputSearch = [
     'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}
 ];
 
-// Output para la HU #03 : Crear un array con todos los tipos de Pokémon
-const outputTypes = ['Grass', 'Poison', 'Grass', 'Poison', 'Grass', 'Poison', 'Fire', 'Water', 'Bug', 'Flying', 'Electric'];
-// Output para la HU #03 : Obtener los tipos únicos
+// Output para obtener los tipos únicos y poder pintarlos en un select
 const outputUniqueTypes = ['Grass', 'Poison', 'Fire', 'Water', 'Bug', 'Flying', 'Electric'];
 
 const outputFilter = [
@@ -117,28 +115,17 @@ describe('searchByName', () => {
   });
 });
 
+// Test para obtener los tipos únicos de Pokemon y poder pintarlos en un select
+describe('pokemon.getUniqueTypes', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.getUniqueTypes).toBe('function');
+  });
+  it('debería retornar un array con los tipos únicos de Pokemon', () => {
+    expect(pokemon.getUniqueTypes(input)).toEqual(outputUniqueTypes);
+  });
+});
+
 // Test para la 3ra historia de usuario: Filtrar por tipo
-// Test para la función que obtiene todos los tipos(incluye repeticiones)
-describe('pokemon.getTypes', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.getTypes).toBe('function');
-  });
-
-  it('debería retornar un array de todos los tipos de Pokemon', () => {
-    expect(pokemon.getTypes(input)).toEqual(outputTypes);
-  });  
-});
-// Test para la función que obtiene los tipos únicos
-describe('pokemon.uniqueTypes', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.uniqueTypes).toBe('function');
-  });
-
-  it('debería retornar los tipos únicos', () => {
-    expect(pokemon.uniqueTypes(input)).toEqual(outputUniqueTypes);
-  });
-});
-// Test para la función que filtra por tipo
 describe('pokemon.filterForType', () => {
   it('debería retornar una función', () => {
     expect(typeof pokemon.filterForType).toBe('function');
