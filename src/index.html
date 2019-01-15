@@ -29,7 +29,7 @@
     <main class="main center-items"> 
       <div class="container">
         <h2>WELCOME TO THE POKEMON WORLD</h2>
-        <div class="section-of-toolbar">
+        <div id="div-search" class="section-of-toolbar">
           <p>Enter the name of the Pokémon</p>
           <input type="text" id="pokemon-name" class="toolbar-search"/>
           <button id="btn-search" class="icon-search button-search"></button>
@@ -52,6 +52,8 @@
           <option value="nameAsc">A-Z</option>
           <option value="nameDesc">Z-A</option>
         </select>
+        <button id="btn-add-data" class="button-add-data">See additional data</button>
+        <div id="div-chart" class="div-graph col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
         <div id="list-pokemon" class="container-divs center-items">
           <!--lista de pokemones-->
         </div>
@@ -63,6 +65,7 @@
         <p>©Copyright 2018 by Lu & Clau. All rights reserved.</p>
       </div>
     </footer>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

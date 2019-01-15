@@ -36,6 +36,8 @@ const input = [
     'height': '0.41 m', 'weight': '6.0 kg', 'weaknesses': ['Ground']},
 ];
 
+const outputQuantity = 3;
+
 // Input para la HU #02 : Ingresar un nombre de Pokémon
 const inputSearch = 'Bulbasaur';
 
@@ -169,5 +171,15 @@ describe('order', () => {
 
   it('debería retornar un array con la propiedad name ordenado de la Z-A', () => {
     expect(pokemon.order(input, 'nameDesc')).toEqual(outputOrderZA);
+  });
+});
+
+// Test para obtener la cantidad de tipos que hay
+describe('pokemon.getQuantityTypes', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.getQuantityTypes).toBe('function');
+  });
+  it('debería retornar la cantidad de tipos Grass que hay', () => {
+    expect(pokemon.getQuantityTypes(input).Grass).toEqual(outputQuantity);
   });
 });

@@ -58,6 +58,7 @@ const btnSearchAdv = document.getElementById('btn-search-adv');
 // Agregando evento al botón de búsqueda avanzada H03: Para que se muestre el select de tipos
 btnSearchAdv.addEventListener('click', () => {
   document.getElementById('select-order').style.display = 'none';
+  btnAddData.style.display = 'none';
   const types = document.getElementById('types');
   types.classList.remove('unseen');
   types.classList.remove('show');
@@ -118,4 +119,83 @@ selectOrder.addEventListener('change', () => {
   const valueSelect = document.getElementById('select-order').value;
   const ordered = pokemon.order(dataMainPokemon, valueSelect);
   paintPokemons(ordered);
+});
+
+
+// Botón para ver el gráfico de Google Charts
+const btnAddData = document.getElementById('btn-add-data');
+
+btnAddData.addEventListener('click', () => {
+  divPokemon.style.display = 'none';
+  selectOrder.style.display = 'none';
+  document.getElementById('div-search').style.display = 'none';
+  btnSearchAdv.style.display = 'none';
+  btnAddData.innerHTML = 'Double click to return';
+  // Cargando la API de visualización el paquete corechart
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+  // Estableciendo una devolución de llamada para que se ejecute
+  // cuando se cargue la API de visualización de Google
+  google.charts.setOnLoadCallback(() => {
+  // Creando la tabla de datos
+    const quantityTypes = pokemon.getQuantityTypes(dataMainPokemon);
+    const data = google.visualization.arrayToDataTable([
+      ['Type', 'Quantity', { role: 'style' } ],
+      ['Bug', quantityTypes.Bug, '#12C03C'],
+      ['Dragon', quantityTypes.Dragon, '#E37010'],
+      ['Electric', quantityTypes.Electric, '#F1E309'],
+      ['Fighting', quantityTypes.Fighting, '#C8170F'],
+      ['Fire', quantityTypes.Fire, '#C25813'],
+      ['Flying', quantityTypes.Flying, '#24D8D0'],
+      ['Ghost', quantityTypes.Ghost, '#8AA1A0'],
+      ['Grass', quantityTypes.Grass, '#11E624'],
+      ['Ground', quantityTypes.Ground, '#8F7211'],
+      ['Ice', quantityTypes.Ice, '#1EBF9F'],
+      ['Normal', quantityTypes.Normal, '#808D8B'],
+      ['Poison', quantityTypes.Poison, '#B650DA'],
+      ['Psychic', quantityTypes.Psychic, '#E7117F'],
+      ['Rock', quantityTypes.Rock, '#7D7579'],
+      ['Water', quantityTypes.Water, '#2ACFB9']
+    ]);
+  
+    // Estableciendo opciones de gráfico
+    const options = {
+      title: 'Quantity Types of Pokemons',
+      fontSize: 18,
+      chartArea: {width: '50%'},
+      hAxis: {
+        title: 'Types',
+        minValue: 0,
+        textStyle: {
+          bold: true,
+          fontSize: 12,
+          color: '#4d4d4d'
+        },
+        titleTextStyle: {
+          bold: true,
+          fontSize: 18,
+          color: '#4d4d4d'
+        }
+      },
+      vAxis: {
+        title: 'Total Pokemons',
+        textStyle: {
+          fontSize: 14,
+          bold: true,
+          color: '#848484'
+        },
+        titleTextStyle: {
+          fontSize: 14,
+          bold: true,
+          color: '#848484'
+        }
+      }
+    };
+    // Dibujar el gráfico, pasando las opciones
+    const chart = new google.visualization.ColumnChart(document.getElementById('div-chart'));
+    chart.draw(data, options);
+  });
+});
+
+btnAddData.addEventListener('dblclick', () => {
+  location.reload();
 });
