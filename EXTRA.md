@@ -27,3 +27,5 @@ Issue:
 - El footer se desplaza hacia arriba.
 
 ### Llamando a la data mediante fetch
+
+![Usando fetch](https://i.ibb.co/9hRyzFZ/hacker3.jpg)
