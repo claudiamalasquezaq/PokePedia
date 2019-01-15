@@ -1,72 +1,31 @@
 # Data Lovers, viaje extendido
 
-![Travel pic](https://assets-auto.rbl.ms/5fefc7fee587f0e4aca6794810f346d3c555463eed4e21eaa015d6fc9e6bcb5d)
-[Fuente](https://www.theodysseyonline.com/road-trips-worthwhile)
+## Mejoras luego de la entrevista
 
-## Resumen del proyecto
-Después de unas semanas trabajando en el proyecto, queremos proponerte una
-_segunda parte_ que se adapte tu proceso de aprendizaje **individual**.
-Esto permitirá que consolides, profundices y/o complementes lo aprendido.
+- La página era responsive con issues, así que se editó el archivo _grid.css_ haciendo que para todos los tamaños de pantallas hayan 12 columnas.
 
-Las alternativas son las siguientes:
+![Responsive](https://i.ibb.co/C58hCNB/mejora1.jpg)
 
-## 1. Si no terminaste la "Parte Obligatoria" del proyecto
-Pues termínala ¿no?. No te olvides de que estás acá para aprender y no para
-simplemente "pasar" de un proyecto a otro y tener la ilusión de que aprendes.
-No estás compitiendo con nadie más que contigo misma.
+- Para obtener en un select todos los tipos de Pokémon, se usaban dos funciones (getTypes y uniqueTypes), se logró unir en una sola.
 
-Completa el proyecto original con todo lo que se especifica en
-la [parte obligatoria](README.md#parte-obligatoria).
+![Juntar dos funciones](https://i.ibb.co/z5WybST/mejora2.jpg)
 
-## 2. Si completaste la "Parte Obligatoria"
-Tienes estas opciones:
+- En el CSS, debe ir de lo más general (body, h1, h2, header, etc) a lo más específico (clases).  Deben hacerse los llamados por clases y no por id, para que luego el código sea reutilizable.
 
-  - Haz la "Parte Opcional" [(Hacker Edition)](README.md#parte-opcional-hacker-edition).
-  Enfócate en los dos puntos principales: _cargar la data usando `fetch`_ y/o 
-  _agregar gráficas con [`Chart.js`](https://www.chartjs.org/) o 
-  [`Google Charts`](https://developers.google.com/chart/)_. Si ya hiciste esto,
-  pasa a las siguientes opciones (obviamente).
 
-  - Si quieres explorar un poco más sobre el Diseño de Experiencia de Usuario
-  (_UX Design_), te proponemos hacer sesiones de 
-  _testeo de usabilidad con usuarios_ e iterar tu producto. Hacerlo te permitirá
-  pensar y entender mejor en el diseño de tu producto pero basándote en el 
-  _feedback_ de los usuarios y no en tus asunciones, hipótesis o preferencias
-  personales.
+## HACKER EDITION
 
-    Así podrás, además, reforzar tus conocimientos sobre 
-    _heurísticas de usabilidad_ y principios de diseño visual.
+### Google Charts
 
-- Si quieres profundizar sobre lo ya aprendido de Front-end y codear
-  un poco más, elige otra [fuente de datos](README.md#resumen-del-proyecto) para
-  hacer otro "Producto". Por ejemplo, si hiciste una visualización con datos del
-  Banco Mundial, puedes aplicar todo lo aprendido para, esta vez, hacer una
-  sobre Pokémon.
+Primero, se implementó un botón en el _index.html_ para ver data adicional, allí se debe mostrar solo el gráfico que muestre cuántos tipos de Pokemon hay y la cantidad que tiene cada uno.
 
-- [Refactoriza](https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n) tu código
-  para aumentar la cobertura de _tests_ (incluyendo pruebas para componentes 
-  de interfaz).
+![Interfaz con botón](https://i.ibb.co/vhD44z4/hacker1.jpg)
 
-## Consideraciones generales
-- Esta segunda parte del proyecto es _individual_.
+![Haciendo click en botón](https://i.ibb.co/8Pj2817/hacker2.jpg)
 
-- Es responsabilidad de lxs _coaches_ y la _Training Manager_, después de las
-  entrevistas de final de proyecto, aconsejar y validar los siguientes pasos 
-  para cada estudiante.
+Issue: 
+- El footer se desplaza hacia arriba.
 
-## Cómo empezar a trabajar en el proyecto
+### Llamando a la data mediante fetch
 
-Para actualizar tu fork/rama de este proyecto con este archivo (`EXTRA.md`),
-puedes hacer _pull_ de los cambios desde la rama `master` del remoto de
-`Laboratoria` con un comando como el siguiente:
-
-```sh
-git pull <repo-url> <branch>
-```
-
-Por ejemplo, si el repo de tu cohort es
-`https://github.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers.git`:
-
-```sh
-git pull https://github.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers.git master
-```
+![Usando fetch](https://i.ibb.co/9hRyzFZ/hacker3.jpg)

@@ -8,15 +8,15 @@ describe('pokemon', () => {
 });
 
 // Input para la HU #01: Ingresa todas las propiedades de la data.
-const inputGet = [{'id': 1, 'num': '001', 'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png',
-  'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'candy': 'Bulbasaur Candy', 'candy_count': 25,
-  'egg': '2 km', 'spawn_chance': 0.69, 'avg_spawns': 69, 'spawn_time': '20:00', 'multipliers': [1.58],
-  'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic'],
-  'next_evolution': [{'num': '002', 'name': 'Ivysaur'}, {'num': '003', 'name': 'Venusaur'}]
-}];
+// const inputGet = [{'id': 1, 'num': '001', 'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png',
+//   'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'candy': 'Bulbasaur Candy', 'candy_count': 25,
+//   'egg': '2 km', 'spawn_chance': 0.69, 'avg_spawns': 69, 'spawn_time': '20:00', 'multipliers': [1.58],
+//   'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic'],
+//   'next_evolution': [{'num': '002', 'name': 'Ivysaur'}, {'num': '003', 'name': 'Venusaur'}]
+// }];
 
 // Output para la HU #01 : Devuelve solo las propiedades que se necesitan (name, img, type, height, weight, weaknesses)
-const outputGet = [{'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}];
+// const outputGet = [{'name': 'Bulbasaur', 'img': 'http://www.serebii.net/pokemongo/pokemon/001.png', 'type': ['Grass', 'Poison'], 'height': '0.71 m', 'weight': '6.9 kg', 'weaknesses': ['Fire', 'Ice', 'Flying', 'Psychic']}];
 
 // Input para las demás historias de usuario
 const input = [
@@ -95,15 +95,15 @@ const outputOrderZA = [
 const outputCalculate = 1;
 
 // Test para la 1era historia de usuario: Mostrar solo ciertas propiedades de la data
-describe('pokemon.getDataMainOfPokemon', () => {
-  it('debería retornar una función', () => {
-    expect(typeof pokemon.getDataMainOfPokemon).toBe('function');
-  });
+// describe('pokemon.getDataMainOfPokemon', () => {
+//   it('debería retornar una función', () => {
+//     expect(typeof pokemon.getDataMainOfPokemon).toBe('function');
+//   });
 
-  it('debería retornar un nuevo array, con los datos principales de los pokemones', () => {
-    expect(pokemon.getDataMainOfPokemon(inputGet)).toEqual(outputGet);
-  });
-});
+//   it('debería retornar un nuevo array, con los datos principales de los pokemones', () => {
+//     expect(pokemon.getDataMainOfPokemon(inputGet)).toEqual(outputGet);
+//   });
+// });
 
 // Test para la 2da historia de usuario: Búsqueda por nombre
 describe('searchByName', () => {
