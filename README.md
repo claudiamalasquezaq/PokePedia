@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 82d8514ff0e6fbff47f14b5a3bf27e146b08313f
 # PokePedia
 
 ## ELECCIÓN DE LA DATA Y EL USUARIO
@@ -216,6 +219,7 @@ En nuestro tablero, por cada historia de usuario, dividimos las tareas por color
 - El naranja era todo lo que se tenía que crear con javaScript (funciones, tests)
 - El azul era lo que se implementaba en el html
 - El rosado era el diseño que se debía hacer de acuerdo al prototipo de alta fidelidad.
+<<<<<<< HEAD
 =======
 # Data Lovers
 
@@ -755,3 +759,5 @@ compañera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 >>>>>>> 62cdbd37178e7f5270318674305e4435f402f414
+=======
+>>>>>>> 82d8514ff0e6fbff47f14b5a3bf27e146b08313f
