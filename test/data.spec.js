@@ -171,3 +171,12 @@ describe('order', () => {
     expect(pokemon.order(input, 'nameDesc')).toEqual(outputOrderZA);
   });
 });
+
+describe('pokemon.getQuantityTypes', () => {
+  it('debería retornar una función', () => {
+    expect(typeof pokemon.getQuantityTypes).toEqual('function');
+  });
+  it('debería retornar la cantidad de Pokemon de tipo Grass', () => {
+    expect(pokemon.getQuantityTypes(input).Grass).toEqual(3);
+  });
+});
