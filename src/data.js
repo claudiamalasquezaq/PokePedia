@@ -83,6 +83,18 @@ const order = (data, typeOfOrder) => {
   return ordered;
 };
 
+const getQuantityTypes = (data) => {
+  let arrTypes = [];
+  data.forEach(obj => {
+    arrTypes = arrTypes.concat(obj.type);
+  });
+  const accum = arrTypes.reduce((counter, type) => {
+    counter[type] = (counter[type] || 0) + 1;
+    return counter;
+  }, {});
+  return accum;
+};
+
 window.pokemon = {
   getDataMainOfPokemon,
   searchByName,
@@ -91,4 +103,5 @@ window.pokemon = {
   getAverage,
   calculateQuantityByType,
   order,
+  getQuantityTypes,
 };
