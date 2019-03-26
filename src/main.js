@@ -1,5 +1,5 @@
 // Usando fetch para llamar a la data
-const url = 'https://claudiamalasquezaq.github.io/lim-2018-11-bc-core-am-data-lovers/src/data/pokemon/pokemon.json';
+const url = 'https://github.com/claudiamalasquezaq/PokePedia/blob/master/src/data/pokemon/pokemon.json';
 fetch(url)
   .then((response) => {
     return response.json();
